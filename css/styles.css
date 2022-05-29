@@ -1,0 +1,319 @@
+*{
+    padding:0;
+    box-sizing: border-box; 
+    margin:0;
+}
+@font-face{
+    font-family: "BPdiet";
+    src:url('../fonts/BPdiet.otf')
+}
+@font-face {
+    font-family: "cooper-hewitt";
+    src: url(../fonts/cooper-hewitt/CooperHewitt-HeavyItalic.otf)
+    
+}
+
+/* ARRANCA CSS DE INDEX */
+.contenedor{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 4% 32% 32% 32%;
+    grid-template-areas:
+    "nav nav"
+    "logoEscuela articuloEscuela"
+    "logoCanchas articuloCanchas"
+    "logoGym articuloGym";
+ }
+ .menu1{
+    grid-area:nav;
+}
+.logoEscuela{
+    grid-area:logoEscuela;
+    height:100%;
+    width:100%;
+   
+}
+ .logoCanchas{
+    grid-area:logoCanchas;
+    height:100%;
+    width:100%;
+     
+}
+.logoGym{
+    grid-area:logoGym;
+} 
+.articuloEscuela{
+    grid-area:articuloEscuela;
+    background-color: #30638e;
+}
+.articuloCanchas{
+    grid-area:articuloCanchas;
+    background-color: #7fb069;
+}
+.articuloGym{
+    grid-area:articuloGym;
+    background-color: #f5853f;
+} 
+ .menu1 li{
+    display:inline;
+    margin-left: 0px;
+    text-decoration:none;
+    color:black;
+    padding-right:10px;
+} 
+
+ @media screen and (min-width:768px){
+    .contenedor{
+        display:grid;
+        height:100vh;
+        width: 100vw;
+        grid-template-columns: 20% 20% 60%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+        "nav logoEscuela articuloEscuela "
+        "nav logoCanchas articuloCanchas "
+        "nav logoGym articuloGym ";
+     } 
+       .menu1 ul {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        
+        padding-right:70%;
+        } 
+        
+ }
+ 
+header{
+    border: 3px solid black;
+    padding:10px;
+    margin: 5px;
+    background-image:linear-gradient(rgba(5,7,12,0.1),rgba(5,7,12,0.1)), url(../imagen/fondo-header.jpg); 
+    background-repeat: repeat-x;
+    background-size:contain;
+    width:98vw;
+}
+nav{
+    width: 100vw;
+}
+
+.redes{
+    width:30px;
+    height:30px;
+}
+h1{ font-family:"BPdiet";
+    text-align:left;
+   font-size: 300%;
+    color:black;
+    background-color: rgba(216, 211, 204, 0.5);
+    width:450px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+
+h2{
+     font-family: "BPdiet"; 
+    margin:5px;
+    color:black;
+    font-weight: bold;
+    
+}
+article{
+    margin:5px;
+    border:3px solid black;
+}
+
+.img{
+    width:500px;
+    height: 300px;
+     top: 80%; left:80%;
+     padding-left: 100px;  
+  
+}  
+
+iframe{
+        height: 90%;
+    width:99%
+}
+caption{
+    margin:3px 40%; 
+    padding:5px;
+    font-style: italic;
+    caption-side:top;
+    color: black;
+    text-align: center;
+    border:2px solid black;
+}
+table{
+    width:100%;
+    border:3px solid black;
+    border-collapse:collapse ; 
+}
+tbody tr td{
+        text-align: center;
+}
+th,tfoot,td{
+    border:3px solid black; 
+}
+.fondoEscuela{
+    background-image: linear-gradient(rgba(5,7,12,0),rgba(5,7,12,0)),
+    url(../imagen/imagen\ escuelita.jpg);
+     
+}
+
+.fondoCanchas{
+    background-image: linear-gradient(rgba(5,7,12,0),rgba(5,7,12,0)),
+    url(../imagen/cancha-panoramica.jpeg);
+    
+    padding-left: 50px ;
+}
+.articuloServicios{
+    border:none;
+    height:500px;
+    font-family: "BPdiet";
+    text-align: center;
+
+}
+.textoServicios{
+    font-family:"BPdiet";
+    font-style:italic;
+    color:lightblue;
+    text-align: center;
+  
+}
+.fondoGimnasio{
+    background-image: url(../imagen/gym-funcional.jpeg);
+}
+.articuloGimnasio{
+    border:none;
+    height:300px;
+    font-family: "BPdiet";
+    text-align: center; 
+}
+ 
+fieldset{
+    position:relative;
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.formulario{
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color: black; 
+    
+}
+/* ARRANCA CSS DE GALERIA */
+
+body{
+    background-image: linear-gradient(rgba(5,7,12,0),rgba(5,7,12,0)),
+    url(../imagen/cancha-panoramica.jpeg);
+    width: 100vw;
+}
+.redes{
+    width:30px;
+    height:30px;
+}
+.borde{
+border:1px solid black;
+margin:5px;
+
+}
+ .navegacion ul  {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+}
+li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 3px;
+    
+}
+a{
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color:#7dba84;  
+} 
+.textoGaleria{
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color:#7dba84;
+}
+ .imgGaleria{
+    width:90%;
+    display:block;
+} 
+
+.contenedorGaleria{
+display:grid;
+width:100vw;
+grid-template-columns: 0.5fr 0.5fr;
+grid-template-rows: 0.10fr 0.10fr 2.5fr 1fr;
+grid-template-areas: "header header"
+"nav nav"
+"seccion1 seccion2"
+"footer footer"
+}
+header{
+    grid-area:header;
+}
+nav{
+    grid-area:nav;
+}
+.seccionPredio{
+    grid-area:seccion1;
+
+}
+.seccionCamisetas{
+    grid-area:seccion2;
+}
+footer{
+    grid-area:footer;
+}
+
+@media screen and (min-width:768px){
+    .contenedorGaleria{
+ display:grid;
+ width:100vw;
+ height: 100vh;
+ grid-template-columns:15% 85%;
+grid-template-rows: 0.25fr 1fr 1fr 1fr;
+grid-template-areas: "header header"
+"nav seccion1 "
+"nav seccion2"
+"footer footer"
+    }
+    .navegacion ul {
+        
+         display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 100%; 
+        
+                } 
+                
+            .seccionPredio{
+                display:flex;
+                flex-direction: row;
+                                
+            }
+            .seccionCamisetas{
+                display:flex;
+                flex-direction: row;
+                }
+            .imgGaleria{
+            width:15%;
+            }
+              body{
+                width:100vw;
+               
+            }  
+}

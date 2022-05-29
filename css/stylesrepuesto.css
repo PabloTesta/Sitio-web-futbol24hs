@@ -1,0 +1,97 @@
+*{
+    padding:0;
+    box-sizing: border-box; 
+    margin:0;
+}
+body{
+    background-color: yellowgreen;
+    width: 100vw;
+}
+.redes{
+    width:30px;
+    height:30px;
+}
+.borde{
+border:1px solid black;
+margin:5px;
+background-color:bisque;
+}
+ .navegacion ul  {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 3px;;
+} 
+ .imgGaleria{
+    width:90%;
+    display:block;
+} 
+main{
+    background-color: aqua;
+}
+.contenedorGaleria{
+display:grid;
+width:100vw;
+grid-template-columns: 0.5fr 0.5fr;
+grid-template-rows: 0.10fr 0.10fr 2.5fr 1fr;
+grid-template-areas: "header header"
+"nav nav"
+"seccion1 seccion2"
+"footer footer"
+}
+header{
+    grid-area:header;
+}
+nav{
+    grid-area:nav;
+}
+.seccionPredio{
+    grid-area:seccion1;
+
+}
+.seccionCamisetas{
+    grid-area:seccion2;
+}
+footer{
+    grid-area:footer;
+}
+
+@media screen and (min-width:768px){
+    .contenedorGaleria{
+ display:grid;
+ width:100vw;
+ height: 100vh;
+ grid-template-columns:15% 85%;
+grid-template-rows: 0.25fr 1fr 1fr 1fr;
+grid-template-areas: "header header"
+"nav seccion1 "
+"nav seccion2"
+"footer footer"
+    }
+    .ulnav  {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 100%;
+            } 
+            .seccionPredio{
+                display:flex;
+                flex-direction: row;
+                                
+            }
+            .seccionCamisetas{
+                display:flex;
+                flex-direction: row;
+                }
+            .imgGaleria{
+            width:15%;
+            }
+              body{
+                width:100vw;
+               
+            }  
+}
