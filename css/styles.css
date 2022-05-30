@@ -67,7 +67,7 @@
     padding:3px;
 }
  li:hover{
-    background-color:linear-gradient(#e2f89c,#4c85777);
+    background-color:linear-gradient(#e2f89c,#c85777);
     font-size: larger;
     padding:20px;
     transition: all .5s;
