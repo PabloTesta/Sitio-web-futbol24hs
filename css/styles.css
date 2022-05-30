@@ -17,7 +17,7 @@
 .contenedor{
     display:grid;
     height:100vh;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 10% 1fr;
     grid-template-rows: 4% 32% 32% 32%;
     grid-template-areas:
     "nav nav"
@@ -27,6 +27,7 @@
  }
  .menu1{
     grid-area:nav;
+    
 }
 .logoEscuela{
     grid-area:logoEscuela;
@@ -56,13 +57,21 @@
     background-color: #f5853f;
 } 
  .menu1 li{
-    display:inline;
-    margin-left: 0px;
-    text-decoration:none;
-    color:black;
+    display:inline-block;
+    
     padding-right:10px;
-} 
-
+ }
+ li{
+    border:solid 2px black;
+    background-color: #e2f89c;
+    padding:3px;
+}
+ li:hover{
+    background-color:linear-gradient(#e2f89c,#4c85777);
+    font-size: larger;
+    padding:20px;
+    transition: all .5s;
+}
  @media screen and (min-width:768px){
     .contenedor{
         display:grid;
@@ -80,10 +89,19 @@
         justify-content: space-between;
         flex-direction: column;
         height: 100%;
-        
-        padding-right:70%;
+         margin-right: 89%;       
         } 
-        
+        li{
+            border:solid 2px black;
+            background-color: #e2f89c;
+            padding:3px;
+        }
+        li:hover{
+            background-image:linear-gradient(#e2f89c,#7adfbb);
+            font-size: larger;
+            padding:20px;
+            transition: all .5s;
+        }
  }
  
 header{
@@ -231,8 +249,8 @@ margin:5px;
     justify-content:space-around;
     
 }
-li{
-    display: inline;
+ li{
+    display: inline-block;
     text-decoration: none;
     padding-left: 3px;
     
@@ -251,7 +269,12 @@ a{
     width:90%;
     display:block;
 } 
-
+.textoNav{
+    display: inline;
+}
+li{
+    border:solid 2px black;
+}
 .contenedorGaleria{
 display:grid;
 width:100vw;
@@ -278,6 +301,9 @@ nav{
 footer{
     grid-area:footer;
 }
+.textoNav {
+    display:inline-block
+}
 
 @media screen and (min-width:768px){
     .contenedorGaleria{
@@ -297,8 +323,8 @@ grid-template-areas: "header header"
         flex-direction:column;
         justify-content: space-between;
         height: 100%; 
-        
-                } 
+        margin-right: 90%;
+            } 
                 
             .seccionPredio{
                 display:flex;
