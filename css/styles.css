@@ -14,7 +14,7 @@
 }
 
 /* ARRANCA CSS DE INDEX */
-.contenedor{
+/*  .contenedor{
     display:grid;
     height:100vh;
     grid-template-columns: 10% 1fr;
@@ -24,16 +24,16 @@
     "logoEscuela articuloEscuela"
     "logoCanchas articuloCanchas"
     "logoGym articuloGym";
- }
+ } */ 
  .menu1{
     grid-area:nav;
+    margin-left: 20px;
     
 }
 .logoEscuela{
     grid-area:logoEscuela;
-    height:100%;
-    width:100%;
-   
+    margin-bottom: 5px;
+
 }
  .logoCanchas{
     grid-area:logoCanchas;
@@ -47,6 +47,7 @@
 .articuloEscuela{
     grid-area:articuloEscuela;
     background-color: #30638e;
+    
 }
 .articuloCanchas{
     grid-area:articuloCanchas;
@@ -57,14 +58,13 @@
     background-color: #f5853f;
 } 
  .menu1 li{
-    display:inline-block;
-    
-    padding-right:10px;
+    display:inline;
+       padding-right:10px;
  }
  li{
     border:solid 2px black;
     background-color: #e2f89c;
-    padding:3px;
+    padding:1px;
 }
  li:hover{
     background-color:linear-gradient(#e2f89c,#c85777);
@@ -73,7 +73,7 @@
     transition: all .5s;
 }
  @media screen and (min-width:768px){
-    .contenedor{
+      /*  .contenedor{
         display:grid;
         height:100vh;
         width: 100vw;
@@ -83,11 +83,11 @@
         "nav logoEscuela articuloEscuela "
         "nav logoCanchas articuloCanchas "
         "nav logoGym articuloGym ";
-     } 
+     }  */  
        .menu1 ul {
         display:flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
          margin-right: 89%;       
         } 
@@ -139,18 +139,18 @@ h2{
     font-weight: bold;
     
 }
-article{
+ article{
     margin:5px;
     border:3px solid black;
-}
+} 
 
-.img{
+/* .img{
     width:500px;
     height: 300px;
      top: 80%; left:80%;
      padding-left: 100px;  
   
-}  
+}   */
 
 iframe{
         height: 90%;
