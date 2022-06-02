@@ -161,7 +161,10 @@ caption{
 .texto{
     font-family: "cooper-hewitt";
     font-style: italic;
-    color:#5b9279;
+    color:black;
+}
+.articuloEscuelita{
+    background-color:rgba(216, 211, 204, 0.5);
 }
 table{
     width:100%;
