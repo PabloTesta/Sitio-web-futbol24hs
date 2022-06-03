@@ -19,7 +19,7 @@
     display:grid;
     width:100vw;
     gap:5px;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 4% 32% 32% 32%;
     grid-template-areas:
     "nav nav "
@@ -33,28 +33,39 @@
     justify-items:start ;
 }
 .escuela{
-    justify-content: stretch;
+    display:flex;
+    flex-direction: row;
+    
+    
 }
 .logoEscuela{
     grid-area:logoEscuela;
-    
+    width:50vw;
+    height:100vh;
 }
 .articuloEscuela{
     grid-area:articuloEscuela;
     background-color: #30638e;
-    justify-self:end;
+    width:50vw;
+    height:100vh;
+    
 }
  .logoCanchas{
     grid-area:logoCanchas;
     width:50vw;
-     }
+    height:100vh;
+}
+     
      .articuloCanchas{
         grid-area:articuloCanchas;
         background-color: #7fb069;
     }
 .logoGym{
     grid-area:logoGym;
-} 
+    width:50vw;
+    height:100vh;
+}
+ 
 
 .articuloGym{
     grid-area:articuloGym;
