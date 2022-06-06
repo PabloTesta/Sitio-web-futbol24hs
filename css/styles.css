@@ -175,16 +175,12 @@ h1{ font-family:"BPdiet";
 
 
 h2{
-     font-family: "BPdiet"; 
+     font-family: "cooper-hewitt"; 
     margin:5px;
-    color:#5b9279;
+    color:#e2f89c;
     font-weight: bold;
     text-align: center;
 }
-/*  article{
-    margin:5px;
-    border:3px solid black;
-}  */
 
 
 iframe{
@@ -226,25 +222,29 @@ th,tfoot,td{
      
 } 
 
-.fondoCanchas{
+ .fondoCanchas{
     background-image: linear-gradient(rgba(5,7,12,0),rgba(5,7,12,0)),
     url(../imagen/cancha-panoramica.jpeg);
-    
-    padding-left: 50px ;
-}
+      
+} 
 .articuloServicios{
     border:none;
     height:500px;
-    font-family: "BPdiet";
+    font-family: "cooper-hewitt";
     text-align: center;
 
 }
 .textoServicios{
-    font-family:"BPdiet";
+    font-family:"cooper-hewitt";
     font-style:italic;
-    color:lightblue;
     text-align: center;
+    color: black;
   
+}
+.leyenda{
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color:#7adfbb
 }
 .fondoGimnasio{
     background-image: url(../imagen/gym-funcional.jpeg);
@@ -252,26 +252,11 @@ th,tfoot,td{
 .articuloGimnasio{
     border:none;
     height:300px;
-    font-family: "BPdiet";
+    font-family: "cooper-hewitt";
     text-align: center; 
 }
  
-fieldset{
-    position:relative;
-    font-family: "cooper-hewitt";
-    font-style: italic;
-    color: black;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-}
-.formulario{
-    font-family: "cooper-hewitt";
-    font-style: italic;
-    color: black; 
-    
-}
-/* ARRANCA CSS DE GALERIA */
+
 
 body{
     background-image: linear-gradient(rgba(5,7,12,0),rgba(5,7,12,0)),
@@ -319,4 +304,97 @@ a{
 }
 li{
     border:solid 2px black;
+}
+/* INICIA GRID CONTACTO */
+
+.contacto{
+    display: grid;
+    width:100vw;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "infoPersonal"
+    "infoServicios";
+}
+.infoPersonal{
+    grid-area: infoPersonal;
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    color:#7dba84;
+}
+.infoServicios{
+    grid-area:infoServicios;
+    display:flex;
+    flex-direction: column;
+    font-size: "cooper-hewitt";
+    color:#7dba84;
+    font-style: italic;
+}
+.boton{
+    width:20%;
+}
+@media screen and (min-width:768px){
+    .contacto{
+        display: grid;
+    width:100vw;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "infoPersonal"
+    "infoServicios"
+    "boton";
+    }
+    .infoPersonal{
+        font-family: "cooper-hewitt";
+        font-style: italic;
+        color:black;
+    }
+    .infoServicios{
+        display:flex;
+        flex-direction:row;
+        font-size: "BPdiet";
+        color:lightgreen;
+        font-weight:800;
+        
+    }
+    .boton{
+        grid-area:boton;
+        display:flex;
+        flex-direction: column;
+           
+}
+}
+/* INICIA GRID DE SERVICIOS */
+.servicios{
+    display:grid;
+    width:100vw;
+    grid-template-rows:0.5fr 0.5fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "articuloServicios"
+    "articuloGimnasio";
+}
+.articuloServicios{
+    grid-area: articuloServicios;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.articuloGimnasio{
+    grid-area:articuloGimnasio;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+@media screen and (min-width:768px){
+    .servicios{
+        display:grid;
+        width:100vw;
+        grid-template-rows:100%;
+        grid-template-columns:0.5fr 0.5fr ;
+        grid-template-areas: "articuloServicios articuloGimnasio";
+}
+          .articulogimnasio{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
 }
