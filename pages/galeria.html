@@ -5,65 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>GALERIA</title>
-
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <main class="contenedorGaleria">
 
-        <header>
 
-            <h1>FUTBOL24HS</h1>
+    <header class="container text-center">
+        <div class="page-header">
+            <h1 class="text-center">FUTBOL24HS</h1>
             <ul class="menu">
-                <li><a href="https://www.instagram.com/" target="blank"><img class="redes"  src="../imagen/icono-de-ig.png"
-                            alt="icono de instagram"></a> </li>
+                <li><a href="https://www.instagram.com/" target="blank"><img class="redes"
+                            src="../imagen/icono-de-ig.png" alt="icono de instagram"></a> </li>
                 <li><a href="https://es-la.facebook.com/pg/popeyefutbolclub/" target="blank"><img class="redes"
                             src="../imagen/icono-de-fb.png" alt="Icono de Facebook"></a></li>
-                <li><a href="https://www.whatsapp.com/" target="blank"><img class="redes" src="../imagen/icono-de-wpp.jpg"
-                            alt="Icono de WhatsApp"></a></li>
+                <li><a href="https://www.whatsapp.com/" target="blank"><img class="redes"
+                            src="../imagen/icono-de-wpp.jpg" alt="Icono de WhatsApp"></a></li>
             </ul>
-    
-        </header>
-        <nav class="navegacion borde">
-            <ul class="textoNav" >
-                <li ><a href="../index.html" target="blank">INICIO</a> </li>
-                <li ><a href="../pages/escueladefutbol.html" target="blank">ESCUELITA</a></li>
-                <li ><a href="../pages/servicios.html" target="blank">SERVICIOS</a></li>
-                <li ><a href="../contacto.html" target="blank">CONTACTO</a></li>
-                <li ><a href="#" target="blank">GALERIA</a></li>
-            </ul>
-        </nav>
-        
-        <section class="borde seccionPredio">
-            <p class="textoGaleria">IMAGENES DEL PREDIO</p>
-            <img class="imgGaleria" src="../imagen/20220428_215121.jpg"  alt="">
-            <img class="imgGaleria" src="../imagen/equipo-noche.jpeg" alt=" ">
-            <img class="imgGaleria" src="../imagen/20220428_215225.jpg" alt="">
-            <img class="imgGaleria" src="../imagen/cama-elastica.jpg" alt="">
-            <img class="imgGaleria" src="../imagen/equipo-futbol.jpeg" alt="">
+        </div>
+    </header>
+    <nav class="navegacion borde">
+        <ul class="textoNav">
+            <li><a href="../index.html" target="blank">INICIO</a> </li>
+            <li><a href="../pages/escueladefutbol.html" target="blank">ESCUELITA</a></li>
+            <li><a href="../pages/servicios.html" target="blank">SERVICIOS</a></li>
+            <li><a href="../contacto.html" target="blank">CONTACTO</a></li>
+            <li><a href="#" target="blank">GALERIA</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="tarjetas" class="row g-5">
             
-        </section>
-        <section class="borde seccionCamisetas">
-            <p class="textoGaleria">IMAGENES DE CAMISETAS</p>
-                <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224051.jpg" alt="">
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">RIVER</h3>
+                <img class="imgGaleria " src="../imagen/coleccion camisetas/20220429_224051.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera de river intercambiada en algún partido</p>
+                </div>
+            </div>
+
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">Independiente</h3>
                 <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224157.jpg" alt="">
-                <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224221.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera de Independiente intercambiada en algún partido</p>
+                </div>
+            </div>
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">Vélez Sarsfield</h3>
+                <img src="../imagen/coleccion camisetas/20220429_224221.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera de Vélez Sarsfield campeón del mundo</p>
+                </div>
+            </div>
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">Velez</h3>
                 <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224249.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera de Chilavert, VelezSarfield</p>
+                </div>
+            </div>
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">Newell's Old Boys</h3>
                 <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224256.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera del Goico</p>
+                </div>
+            </div>
+            <div class="card text-center  text-ligth col-sm-6 col-md-4 col-lg-3 ">
+                <h3 class="card-header">Newell's Old Boys</h3>
                 <img class="imgGaleria" src="../imagen/coleccion camisetas/20220429_224125.jpg" alt="">
+                <div>
+                    <p class="card-text lead">Remera del Goico</p>
+                </div>
+            </div>
         </section>
-        <footer class="borde">
-             <iframe
+
+    </main>
+    <footer class="borde">
+        <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14560.24846766989!2d-65.3280631!3d-24.1695542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb24d894afa22b98!2sClub%20Popeye%20Herrera!5e0!3m2!1ses!2sar!4v1651437095308!5m2!1ses!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
-        </iframe> 
+        </iframe>
 
-        </footer>
+    </footer>
 
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
