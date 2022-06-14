@@ -109,7 +109,7 @@
         width: 100vw;
         height: 100vh;
         grid-template-columns: 20% 20% 60%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 4% 32% 32% 32%;
         grid-template-areas:
             "nav logoEscuela articuloEscuela "
             "nav logoCanchas articuloCanchas "
@@ -375,18 +375,18 @@ li {
 .boton {
     width: 20%;
 }
-
+   
 @media screen and (min-width:768px) {
     .contacto {
         display: grid;
         width: 100vw;
         grid-template-rows: 0.5fr 0.5fr;
-        grid-template-columns: 100%;
-        grid-template-areas: "infoPersonal"
-            "infoServicios"
-            "boton";
+        grid-template-columns:20% 80%;
+        grid-template-areas: "nav infoPersonal"
+            "nav infoServicios"
+            "nav boton";
     }
-
+      
     .infoPersonal {
         font-family: "cooper-hewitt";
         font-style: italic;
@@ -401,7 +401,7 @@ li {
         font-weight: 800;
 
     }
-
+    
     .boton {
         grid-area: boton;
         display: flex;
@@ -410,6 +410,7 @@ li {
     }
 }
 
+ 
 /* INICIA GRID DE SERVICIOS */
 .servicios {
     display: grid;
