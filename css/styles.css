@@ -12,7 +12,10 @@
   src: url(../fonts/cooper-hewitt/CooperHewitt-HeavyItalic.otf); }
 
 .header {
-  background-color: #7dba84; }
+  background-color: rgba(48, 99, 142, 0.65);
+  border: 2px solid black;
+  margin-top: 4px;
+  border-radius: 5px; }
 
 .textoFooter {
   color: white;
@@ -39,7 +42,7 @@
     font-size: smaller; }
     .menu1 ul li:hover {
       background-color: linear-gradient(#e2f89c, #c85777);
-      padding: 20px;
+      padding: 10px;
       transition: all .1s; }
 
 .logoEscuela {
@@ -50,7 +53,8 @@
 .articuloEscuela {
   grid-area: articuloEscuela;
   background-color: #30638e;
-  width: 50vw; }
+  width: 50vw;
+  overflow-y: scroll; }
 
 .logoCanchas {
   grid-area: logoCanchas;
@@ -59,7 +63,8 @@
 
 .articuloCanchas {
   grid-area: articuloCanchas;
-  background-color: #7fb069; }
+  background-color: #7fb069;
+  overflow-y: scroll; }
 
 .logoGym {
   grid-area: logoGym;
@@ -68,7 +73,8 @@
 
 .articuloGym {
   grid-area: articuloGym;
-  background-color: #f5853f; }
+  background-color: #f5853f;
+  overflow-y: scroll; }
 
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -76,8 +82,8 @@
     width: 100vw;
     height: 100vh;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 7% 32% 32% 32%;
-    grid-template-areas: "nav nav" "logoEscuela articuloEscuela " "logoCanchas articuloCanchas " "logoGym articuloGym "; }
+    grid-template-rows: 32% 32% 32%;
+    grid-template-areas: "logoEscuela articuloEscuela " "logoCanchas articuloCanchas " "logoGym articuloGym "; }
   .menu1 ul {
     display: flex;
     justify-content: center;
@@ -143,9 +149,8 @@ nav {
 
 h1 {
   font-family: "BPdiet";
-  /* font-size:xx-large;
-    text-align: left; */
-  color: black; }
+  color: black;
+  overflow-wrap: break-word; }
 
 h2 {
   font-family: "cooper-hewitt";
@@ -259,16 +264,20 @@ a {
 .textoNav {
   display: inline; }
 
-li {
-  border: solid 2px black; }
+.menu li {
+  border: none;
+  overflow-wrap: break-word; }
 
 /* INICIA GRID CONTACTO */
 .contacto {
   display: grid;
   width: 100vw;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 20% 45% 45%;
   grid-template-columns: 100%;
-  grid-template-areas: "infoPersonal" "infoServicios"; }
+  grid-template-areas: "nav" "infoPersonal" "infoServicios"; }
+
+.menu1 {
+  grid-area: nav; }
 
 .infoPersonal {
   grid-area: infoPersonal;
@@ -291,9 +300,9 @@ li {
   .contacto {
     display: grid;
     width: 100vw;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: "nav infoPersonal" "nav infoServicios" "nav boton"; }
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-columns: 100%;
+    grid-template-areas: "nav" "infoPersonal" " infoServicios" " boton"; }
   .infoPersonal {
     font-family: "cooper-hewitt";
     font-style: italic;
@@ -341,3 +350,28 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-around; } }
+
+/* ARRANCA GRID DE FOOTER */
+.contenedorFooter {
+  background-color: rgba(48, 99, 142, 0.65);
+  border: 3px solid black;
+  border-radius: 3px;
+  display: grid;
+  width: 100vw;
+  padding: 15px;
+  grid-template-rows: 90%;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "infoUtil infoRedes"; }
+
+.infoUtil {
+  grid-area: infoUtil;
+  color: white;
+  margin-left: 15px; }
+
+.infoRedes {
+  grid-area: infoRedes;
+  display: flex;
+  padding-right: 5px; }
+  .infoRedes ul li {
+    padding-top: 15px 20px 0 0;
+    border: none; }
