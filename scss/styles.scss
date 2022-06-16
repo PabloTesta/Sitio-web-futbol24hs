@@ -84,6 +84,8 @@
     background-color: #30638e;
     width: 50vw;
     overflow-y: scroll;
+    
+    
 }
 
 .logoCanchas {
@@ -241,7 +243,6 @@ h1 {
 h2 {
     font-family: "cooper-hewitt";
     margin: 5px;
-    color: #e2f89c;
     font-weight: bold;
     text-align: center;
 }
@@ -263,9 +264,9 @@ caption {
 }
 
 .texto {
-    font-family: "cooper-hewitt";
-    font-style: italic;
-    color: black;
+    font-family: "BPdiet";
+    font-style:italic;
+    
 }
 
 .articuloEscuelita {
@@ -313,14 +314,14 @@ td {
     font-family: "cooper-hewitt";
     font-style: italic;
     text-align: center;
-    color: black;
+    
 
 }
 
 .leyenda {
     font-family: "cooper-hewitt";
     font-style: italic;
-    color: #7adfbb
+    
 }
 
 .fondoGimnasio {
@@ -371,11 +372,7 @@ a {
     color: #7dba84;
 }
 
-.textoGaleria {
-    font-family: "cooper-hewitt";
-    font-style: italic;
-    color: #7dba84;
-}
+
 
 .imgGaleria {
     width: 90%;
@@ -533,4 +530,18 @@ background-color: $color-header;
             border:none;
             }
     }
+}
+
+@each $color,$valor in $color-servicios{
+    .#{$color}{
+        @extend texto;
+        color: $valor ;
+    }
+}
+
+.textoEscuela{
+    color:map-get($color-servicios,otro);
+    background-color: map-get($color-servicios,tituloS);
+
+    
 }

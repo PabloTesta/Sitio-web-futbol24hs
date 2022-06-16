@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0; }
 
+/* utilizo mapa para definir colores en todos los H2 del sitio */
 @font-face {
   font-family: "BPdiet";
   src: url("../fonts/BPdiet.otf"); }
@@ -156,7 +157,6 @@ h1 {
 h2 {
   font-family: "cooper-hewitt";
   margin: 5px;
-  color: #e2f89c;
   font-weight: bold;
   text-align: center; }
 
@@ -174,9 +174,8 @@ caption {
   border: 2px solid black; }
 
 .texto {
-  font-family: "cooper-hewitt";
-  font-style: italic;
-  color: black; }
+  font-family: "BPdiet";
+  font-style: italic; }
 
 .articuloEscuelita {
   background-color: rgba(216, 211, 204, 0.5); }
@@ -209,13 +208,11 @@ td {
 .textoServicios {
   font-family: "cooper-hewitt";
   font-style: italic;
-  text-align: center;
-  color: black; }
+  text-align: center; }
 
 .leyenda {
   font-family: "cooper-hewitt";
-  font-style: italic;
-  color: #7adfbb; }
+  font-style: italic; }
 
 .fondoGimnasio {
   background-image: url(../imagen/gym-funcional.jpeg); }
@@ -249,11 +246,6 @@ li {
   padding-left: 3px; }
 
 a {
-  font-family: "cooper-hewitt";
-  font-style: italic;
-  color: #7dba84; }
-
-.textoGaleria {
   font-family: "cooper-hewitt";
   font-style: italic;
   color: #7dba84; }
@@ -378,3 +370,19 @@ a {
   .infoRedes ul li {
     padding-top: 15px 20px 0 0;
     border: none; }
+
+.tituloS {
+  color: #e2f89c; }
+
+.leyenda {
+  color: #7adfbb; }
+
+.texto {
+  color: black; }
+
+.otro {
+  color: #30638e; }
+
+.textoEscuela {
+  color: #30638e;
+  background-color: #e2f89c; }
