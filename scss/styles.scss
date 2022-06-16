@@ -5,6 +5,7 @@
 }
 
 @import 'variables';
+@import 'mixins';
 
 @font-face {
     font-family: "BPdiet";
@@ -50,7 +51,8 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
-        width: 30vw;
+        @include sizes(30vw,);
+        
 
 
         li {
@@ -75,8 +77,7 @@
 
 .logoEscuela {
     grid-area: logoEscuela;
-    width: 50vw;
-    height: 100vh;
+    @include sizes(50vw,100vh);
 }
 
 .articuloEscuela {
@@ -90,8 +91,7 @@
 
 .logoCanchas {
     grid-area: logoCanchas;
-    width: 50vw;
-    height: 100vh;
+    @include sizes(50vw,100vh);
 }
 
 .articuloCanchas {
@@ -102,8 +102,7 @@
 
 .logoGym {
     grid-area: logoGym;
-    width: 50vw;
-    height: 100vh;
+    @include sizes(50vw,100vh);
 }
 
 
@@ -117,8 +116,7 @@
 @media screen and (min-width:768px) {
     .contenedor {
         display: grid;
-        width: 100vw;
-        height: 100vh;
+        @include sizes(100vw,100vh);
         grid-template-columns: 20% 80%;
         grid-template-rows:32% 32% 32%;
         grid-template-areas: 
@@ -154,8 +152,7 @@
 
     .logoEscuela {
 
-        width: 50vw;
-        height: 100vh;
+        @include sizes(50vw,100vh);
     }
 
     .articuloEscuela {
@@ -169,8 +166,7 @@
 
     .logoCanchas {
 
-        width: 50vw;
-        height: 100vh;
+        @include sizes(50vw,100vh);
     }
 
     .articuloCanchas {
@@ -180,8 +176,7 @@
 
     .logoGym {
 
-        width: 50vw;
-        height: 100vh;
+        @include sizes(50vw,100vh);
     }
 
 
