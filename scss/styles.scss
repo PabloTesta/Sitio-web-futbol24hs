@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-@import 'variables';
+/* @import 'variables'; */
 @import 'mixins';
 
 @font-face {
@@ -18,41 +18,26 @@
 }
 
 .header {
-    background-color:$color-header;
+    background-color: $color-header;
     border: 2px solid black;
-    margin-top:4px;
-    border-radius:5px;
+    margin-top: 4px;
+    border-radius: 5px;
 }
 
- 
+
 
 .textoFooter {
     color: white;
     padding-top: 35px;
 }
-
-/* ARRANCA CSS DE INDEX */
-.contenedor {
-
-    display: grid;
-    width: 100vw;
-    gap: 5px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25%;
-    grid-template-areas:
-
-        "logoEscuela articuloEscuela"
-        "logoCanchas articuloCanchas"
-        "logoGym articuloGym"
-}
-
+/* barra de navegación */
 .menu1 {
     ul {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
-        @include sizes(30vw,);
-        
+        @include sizes(30vw,30vh);
+
 
 
         li {
@@ -72,27 +57,34 @@
     }
 }
 
+/* ARRANCA CSS DE INDEX */
+.contenedor {
 
+    display: grid;
+    width: 100vw;
+    gap: 5px;
+    grid-template-columns: 60% 30% 30% ;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "articuloEscuela publicidad"
+    "articuloCanchas publicidad"
+    
+       
 
-
-.logoEscuela {
-    grid-area: logoEscuela;
-    @include sizes(50vw,100vh);
 }
+
 
 .articuloEscuela {
     grid-area: articuloEscuela;
-    background-color: #30638e;
-    width: 50vw;
-    overflow-y: scroll;
-    
-    
+    display:flex;
+      background-color: #30638e;
+        
+
+}
+.rojo{
+    grid-area:publicidad;
+    background-color:#c85777;
 }
 
-.logoCanchas {
-    grid-area: logoCanchas;
-    @include sizes(50vw,100vh);
-}
 
 .articuloCanchas {
     grid-area: articuloCanchas;
@@ -100,31 +92,23 @@
     overflow-y: scroll;
 }
 
-.logoGym {
-    grid-area: logoGym;
-    @include sizes(50vw,100vh);
-}
 
 
-.articuloGym {
-    grid-area: articuloGym;
-    background-color: #f5853f;
-    overflow-y: scroll;
-}
+
+
 
 
 @media screen and (min-width:768px) {
     .contenedor {
         display: grid;
-        @include sizes(100vw,100vh);
-        grid-template-columns: 20% 80%;
-        grid-template-rows:32% 32% 32%;
-        grid-template-areas: 
-            "logoEscuela articuloEscuela "
-            "logoCanchas articuloCanchas "
-            "logoGym articuloGym ";
+        width:100vw;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: "articuloEscuela publicidad"
+        "articuloCanchas publicidad";
     }
-/* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
+
+    /* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
     .menu1 {
         ul {
             display: flex;
@@ -149,10 +133,14 @@
             }
         }
     }
+}
+    .Escuela {
+        @include sizes(100vw, 100vh);
+        .imagenEscuela{
+            width:100%;
+            height:100%;
+        }
 
-    .logoEscuela {
-
-        @include sizes(50vw,100vh);
     }
 
     .articuloEscuela {
@@ -166,7 +154,7 @@
 
     .logoCanchas {
 
-        @include sizes(50vw,100vh);
+        @include sizes(50vw, 100vh);
     }
 
     .articuloCanchas {
@@ -176,7 +164,7 @@
 
     .logoGym {
 
-        @include sizes(50vw,100vh);
+        @include sizes(50vw, 100vh);
     }
 
 
@@ -184,7 +172,7 @@
 
         background-color: #f5853f;
     }
-}
+
 
 .logoEscuela {
     width: 100%;
@@ -230,7 +218,7 @@ nav {
 h1 {
     font-family: "BPdiet";
     color: black;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
 
 }
 
@@ -260,8 +248,8 @@ caption {
 
 .texto {
     font-family: "BPdiet";
-    font-style:italic;
-    
+    font-style: italic;
+
 }
 
 .articuloEscuelita {
@@ -309,14 +297,14 @@ td {
     font-family: "cooper-hewitt";
     font-style: italic;
     text-align: center;
-    
+
 
 }
 
 .leyenda {
     font-family: "cooper-hewitt";
     font-style: italic;
-    
+
 }
 
 .fondoGimnasio {
@@ -330,11 +318,11 @@ td {
     text-align: center;
 }
 
-  body {
+/* body {
     background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)), $fondo-body;
     width: 100vw;
 
-} 
+} */
  
 .redes {
     width: 30px;
@@ -380,10 +368,11 @@ a {
 
 .menu {
     li {
-    border:none;
-    overflow-wrap: break-word;
+        border: none;
+        overflow-wrap: break-word;
+    }
 }
-}
+
 /* INICIA GRID CONTACTO */
 
 .contacto {
@@ -426,7 +415,7 @@ a {
         width: 100vw;
         grid-template-rows: 10% 30% 30% 30%;
         grid-template-columns: 100%;
-        grid-template-areas:"nav"
+        grid-template-areas: "nav"
             "infoPersonal"
             " infoServicios"
             " boton";
@@ -460,7 +449,7 @@ a {
 .servicios {
     display: grid;
     width: 100vw;
-    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%;
     grid-template-areas: "articuloServicios"
         "articuloGimnasio";
@@ -496,47 +485,53 @@ a {
         justify-content: space-around;
     }
 }
-/* ARRANCA GRID DE FOOTER */ /* uso de variables
+
+/* ARRANCA GRID DE FOOTER */
+/* uso de variables
 */
-.contenedorFooter{
-background-color: $color-header;
-    border:3px solid black;
-    border-radius:3px;
-    display:grid;
-    width:100vw;
+.contenedorFooter {
+    background-color: $color-header;
+    border: 3px solid black;
+    border-radius: 3px;
+    display: grid;
+    width: 100vw;
     padding: 15px;
-    grid-template-rows:90%;
-    grid-template-columns:80% 20%;
+    grid-template-rows: 90%;
+    grid-template-columns: 80% 20%;
     grid-template-areas: "infoUtil infoRedes"
 }
-.infoUtil{
-    grid-area:infoUtil;
-    color:white;
+
+.infoUtil {
+    grid-area: infoUtil;
+    color: white;
     margin-left: 15px;
-    
+
 }
-.infoRedes{
-    grid-area:infoRedes;
-    display:flex;
+
+.infoRedes {
+    grid-area: infoRedes;
+    display: flex;
     padding-right: 5px;
-    ul{
-        li{
-            padding-top:15px 20px 0 0 ;
-            border:none;
-            }
+
+    ul {
+        li {
+            padding-top: 15px 20px 0 0;
+            border: none;
+        }
     }
 }
 
-@each $color,$valor in $color-servicios{
-    .#{$color}{
+/* @each $color,
+$valor in $color-servicios {
+    .#{$color} {
         @extend texto;
-        color: $valor ;
+        color: $valor;
     }
 }
+ */
+.textoEscuela {
+    color: map-get($color-servicios, otro);
+    background-color: map-get($color-servicios, tituloS);
 
-.textoEscuela{
-    color:map-get($color-servicios,otro);
-    background-color: map-get($color-servicios,tituloS);
 
-    
-}
+} 
