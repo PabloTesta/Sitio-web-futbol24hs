@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   box-sizing: border-box;
@@ -22,23 +23,16 @@
   color: white;
   padding-top: 35px; }
 
-/* ARRANCA CSS DE INDEX */
-.contenedor {
-  display: grid;
-  width: 100vw;
-  gap: 5px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 25% 25% 25%;
-  grid-template-areas: "logoEscuela articuloEscuela" "logoCanchas articuloCanchas" "logoGym articuloGym"; }
-
+/* barra de navegación */
 .menu1 ul {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  width: 30vw; }
+  width: 30%;
+  height: 30vh; }
   .menu1 ul li {
     border: solid 2px black;
-    background-color: #e2f89c;
+    background-color: "$color-nav";
     padding: 1px;
     font-size: smaller; }
     .menu1 ul li:hover {
@@ -46,52 +40,50 @@
       padding: 10px;
       transition: all .1s; }
 
-.logoEscuela {
-  grid-area: logoEscuela;
-  width: 50vw;
-  height: 100vh; }
+/* ARRANCA CSS DE INDEX */
+.contenedor {
+  display: grid;
+  width: 100vw;
+  gap: 5px;
+  grid-template-columns: 60% 30%;
+  grid-template-rows: 40% 40%;
+  grid-template-areas: "articuloEscuela publicidad" "articuloCanchas publicidad"; }
 
 .articuloEscuela {
   grid-area: articuloEscuela;
-  background-color: #30638e;
-  width: 50vw;
-  overflow-y: scroll; }
+  display: flex;
+  flex-direction: row;
+  background-color: #30638e; }
 
-.logoCanchas {
-  grid-area: logoCanchas;
-  width: 50vw;
-  height: 100vh; }
+.articuloCanchas {
+  grid-area: articuloCanchas;
+  display: flex; }
+
+.publicidad {
+  grid-area: publicidad;
+  background-color: #c85777; }
 
 .articuloCanchas {
   grid-area: articuloCanchas;
   background-color: #7fb069;
   overflow-y: scroll; }
 
-.logoGym {
-  grid-area: logoGym;
-  width: 50vw;
-  height: 100vh; }
-
-.articuloGym {
-  grid-area: articuloGym;
-  background-color: #f5853f;
-  overflow-y: scroll; }
-
 @media screen and (min-width: 768px) {
   .contenedor {
     display: grid;
     width: 100vw;
-    height: 100vh;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 32% 32% 32%;
-    grid-template-areas: "logoEscuela articuloEscuela " "logoCanchas articuloCanchas " "logoGym articuloGym "; }
-  /* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
+    gap: 5px;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "articuloEscuela publicidad" "articuloCanchas publicidad"; }
   .menu1 ul {
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row nowrap;
-    width: 50vw;
-    padding-bottom: 50px; }
+    height: 40px;
+    padding-top: 3px; }
     .menu1 ul li {
       border: solid 2px black;
       background-color: #e2f89c;
@@ -99,49 +91,40 @@
       .menu1 ul li:hover {
         background-image: linear-gradient(#e2f89c, #7adfbb);
         font-size: larger;
-        padding: 20px;
+        padding: 5px;
         transition: all .1s; }
-  .logoEscuela {
-    width: 50vw;
-    height: 100vh; }
   .articuloEscuela {
-    background-color: #30638e;
-    width: 150vw; }
-  .logoCanchas {
-    width: 50vw;
-    height: 100vh; }
-  .articuloCanchas {
-    background-color: #7fb069; }
-  .logoGym {
-    width: 50vw;
-    height: 100vh; }
-  .articuloGym {
-    background-color: #f5853f; } }
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.2); }
+    .articuloEscuela .cajaImagen {
+      width: 100px;
+      height: 100px;
+      background-color: #7adfbb;
+      padding-right: 5px;
+      background-color: rgba(211, 211, 211, 0.7);
+      border-radius: 5px; }
+      .articuloEscuela .cajaImagen .imagenIndex {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 5px; }
+      .articuloEscuela .cajaImagen h2 {
+        display: inline-block; }
+    .articuloEscuela .textoIndex {
+      width: 100%;
+      color: black;
+      font-family: "Cooper-hewitt";
+      font-size: large; }
+  .publicidad {
+    background-color: #f5853f; }
+    .publicidad .imagenPubli {
+      width: 100%;
+      height: 50%; } }
 
-.logoEscuela {
-  width: 100%;
-  height: 100%; }
-
-.articuloEscuela {
-  width: 100%;
-  height: 100%; }
-
-.logoCanchas {
-  width: 100%;
-  height: 100%; }
-
-.articuloCanchas {
-  width: 100%;
-  height: 100%; }
-
-.logoGym {
-  width: 100%;
-  height: 100%; }
-
-.articuloGym {
-  width: 100%;
-  height: 100%; }
-
+/* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
 nav {
   width: 100vw; }
 
@@ -315,7 +298,7 @@ a {
 .servicios {
   display: grid;
   width: 100vw;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 100%;
   grid-template-areas: "articuloServicios" "articuloGimnasio"; }
 
