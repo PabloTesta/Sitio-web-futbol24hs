@@ -45,28 +45,42 @@
   display: grid;
   width: 100vw;
   gap: 5px;
-  grid-template-columns: 60% 30%;
-  grid-template-rows: 40% 40%;
-  grid-template-areas: "articuloEscuela publicidad" "articuloCanchas publicidad"; }
+  grid-template-columns: 100%;
+  grid-template-rows: 0.3fr 0.3fr 5%;
+  grid-template-areas: "articuloEscuela" "articuloCanchas" "publicidad"; }
 
 .articuloEscuela {
   grid-area: articuloEscuela;
   display: flex;
-  flex-direction: row;
-  background-color: #30638e; }
+  flex-direction: column;
+  background-color: rgba(48, 99, 142, 0.5);
+  width: 100vw; }
+  .articuloEscuela .imagenEscuela {
+    width: 100%; }
 
-.articuloCanchas {
+.canchas {
   grid-area: articuloCanchas;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  text-align: justify; }
+  .canchas .imagenCanchas {
+    width: 99%;
+    margin-bottom: 15px; }
+  .canchas .articuloCanchas {
+    background-color: rgba(125, 186, 132, 0.5); }
 
 .publicidad {
   grid-area: publicidad;
-  background-color: #c85777; }
-
-.articuloCanchas {
-  grid-area: articuloCanchas;
-  background-color: #7fb069;
-  overflow-y: scroll; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .publicidad .imagenPubli {
+    width: 45%;
+    height: 100%; }
+  .publicidad .articuloPubli {
+    margin-top: 5px;
+    background-color: #f5853f;
+    text-align: justify; }
 
 @media screen and (min-width: 768px) {
   .contenedor {
