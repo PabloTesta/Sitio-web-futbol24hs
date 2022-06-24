@@ -26,13 +26,12 @@
 /* barra de navegación */
 .menu1 ul {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  width: 30%;
-  height: 30vh; }
+  flex-direction: row;
+  width: 90vw;
+  height: 10vh; }
   .menu1 ul li {
     border: solid 2px black;
-    background-color: "$color-nav";
+    background-color: #e2f89c;
     padding: 1px;
     font-size: smaller; }
     .menu1 ul li:hover {
@@ -53,7 +52,7 @@
   grid-area: articuloEscuela;
   display: flex;
   flex-direction: column;
-  background-color: rgba(48, 99, 142, 0.5);
+  background-color: rgba(48, 99, 142, 0.85);
   width: 100vw; }
   .articuloEscuela .imagenEscuela {
     width: 100%; }
@@ -67,7 +66,7 @@
     width: 99%;
     margin-bottom: 15px; }
   .canchas .articuloCanchas {
-    background-color: rgba(125, 186, 132, 0.5); }
+    background-color: rgba(125, 186, 132, 0.85); }
 
 .publicidad {
   grid-area: publicidad;
