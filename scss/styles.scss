@@ -32,28 +32,8 @@
     padding-top: 35px;
 }
 
-/* barra de navegación */
-.menu1 {
-    ul {
-        display: flex;
-        flex-direction:row;
-       
-        @include sizes(90vw, 10vh);
-
-       li {
-            border: solid 2px black;
-            background-color: $color-nav;
-            padding: 1px;
-            font-size: smaller;
-                        
-            &:hover {
-                background-color: linear-gradient(#e2f89c, #c85777);
-                padding: 10px;
-                transition: all .1s;
-            }
-        }
-
-    }
+.navbar{
+    background-color:$color-header;
 }
 
 /* ARRANCA CSS DE INDEX */
