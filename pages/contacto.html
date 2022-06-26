@@ -25,38 +25,57 @@
             </ul>
         </div>
     </header>
-<main class="contacto">
-    <nav class="menu1">
-        <ul >
-            <li><a href="../index.html" target="_blank">INICIO</a> </li>
-            <li><a href="../pages/escueladefutbol.html" target="_blank">ESCUELITA</a></li>
-            <li><a href="../pages/servicios.html" target="_blank">SERVICIOS</a></li>
-            <li><a href="#" target="blank">CONTACTO</a></li>
-            <li><a href="../pages/galeria.html" target="_blank">GALERIA</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="../index.html" target="blank">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/escueladefutbol.html" >ESCUELA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html" target="blank">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html" target="blank">GALERÍA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <main class="contacto">
     <section class=" fondoCanchas">
         <form class="infoPersonal" action="" method="get">
             <label for="NombreyApellido">Ingrese su Nombre y Apellido</label>
             <input type="text" id="NombreyApellido" placeholder="Andres Lopez">
             <label for="direcciondee-mail">Ingrese su correo electronico</label>
             <input type="email" name="" id="direcciondee-mail" placeholder="andres@mail.com">
-            <span><label for="Numerotelefonico">Ingrese su numero de contacto</label>
-                <input type="text" name="" id="Numerotelefonico" placeholder="351-4159834">
-            </span>
+            <label for="Numerotelefonico">Ingrese su numero de contacto</label>
+            <input type="text" name="" id="Numerotelefonico" placeholder="351-4159834">
+            
             
         </form>
         <form class="infoServicios" action="" method="get">
-            <fieldset>
+            <fieldset class="cuadroDialogo">
                 <legend>¿Por cual de nuestros servicios requiere información extra?</legend>
                 <label for="CasillaCanchas">Alquiler de Canchas</label>
                 <input type="checkbox" name="" id="CasillaCanchas">
-                <label for="CasillaEscuela">Escuela de Futbol</label>
+                <label for="CasillaEscuela">Escuela de Fútbol</label>
                 <input type="checkbox" name="" id="CasillaEscuela">
                 <label for="CasillaGimnasio">Gimnasio</label>
                 <input type="checkbox" name="" id="CasillaGimnasio">
             </fieldset>
-            <fieldset>
+            <fieldset class="cuadroDialogo">
                 <legend>Dejenos su consulta</legend>
                 <textarea name="" id="Cajadecomentarios" cols="30" rows="13"></textarea>
             </fieldset>

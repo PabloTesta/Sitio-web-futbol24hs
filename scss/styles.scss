@@ -196,8 +196,8 @@
     }
 
     .publicidad {
-display: flex;
-flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
 
         .articuloPubli {
@@ -207,14 +207,14 @@ flex-direction: column;
             font-size: large;
             padding:30px;
             padding-top: 50px;
-            
+
 
         }
 
         .imagenPubli {
             @include sizes(100%, 50%);
             border-radius: 10px;
-            
+
         }
     }
 
@@ -400,19 +400,21 @@ a {
 .contacto {
     display: grid;
     width: 100vw;
-    grid-template-rows: 20% 45% 45%;
+    grid-template-rows: 45% 45%;
     grid-template-columns: 100%;
-    grid-template-areas: "nav"
+    grid-template-areas:
         "infoPersonal"
         "infoServicios";
 }
 
-.menu1 {
-    grid-area: nav;
-}
+
 
 .infoPersonal {
     grid-area: infoPersonal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     font-family: "cooper-hewitt";
     font-style: italic;
     color: #7dba84;
@@ -422,9 +424,17 @@ a {
     grid-area: infoServicios;
     display: flex;
     flex-direction: column;
+
+    width: 100%;
     font-size: "cooper-hewitt";
     color: #7dba84;
     font-style: italic;
+
+    .cuadroDialogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .boton {
@@ -435,9 +445,9 @@ a {
     .contacto {
         display: grid;
         width: 100vw;
-        grid-template-rows: 10% 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
         grid-template-columns: 100%;
-        grid-template-areas: "nav"
+        grid-template-areas: 
             "infoPersonal"
             " infoServicios"
             " boton";
@@ -451,17 +461,19 @@ a {
 
     .infoServicios {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         font-size: "BPdiet";
-        color: lightgreen;
+        color:aliceblue;
         font-weight: 800;
-
-    }
+       legend{
+        text-align: center;
+       }
 
     .boton {
         grid-area: boton;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
     }
 }
@@ -471,7 +483,7 @@ a {
 .servicios {
     display: grid;
     width: 100vw;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 20% 40%;
     grid-template-columns: 100%;
     grid-template-areas: "articuloServicios"
         "articuloGimnasio";
@@ -508,9 +520,8 @@ a {
     }
 }
 
-/* ARRANCA GRID DE FOOTER */
-/* uso de variables
-*/
+
+/* uso de variables*/
 .contenedorFooter {
     background-color: $color-header;
     border: 3px solid black;
@@ -550,9 +561,10 @@ $valor in $color-servicios {
     }
 }
 
-.textoEscuela {
-    color: map-get($color-servicios, otro);
-    background-color: map-get($color-servicios, tituloS);
-
+ .textoEscuela {
+    color: map-get($color-servicios, texto);
+    font-family: "cooper-hewitt";
+    font-size: large;
+} 
 
 }
