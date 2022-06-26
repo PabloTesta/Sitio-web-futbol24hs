@@ -43,16 +43,18 @@
   .articuloEscuela .imagenEscuela {
     width: 100%; }
 
-.canchas {
+.textoIndex {
+  padding: 4px;
+  text-align: justify; }
+
+.articuloCanchas {
   grid-area: articuloCanchas;
   display: flex;
   flex-direction: column;
-  text-align: justify; }
-  .canchas .imagenCanchas {
-    width: 99%;
-    margin-bottom: 15px; }
-  .canchas .articuloCanchas {
-    background-color: rgba(125, 186, 132, 0.85); }
+  background-color: rgba(125, 186, 132, 0.85);
+  width: 100vw; }
+  .articuloCanchas .imagenCanchas {
+    width: 100%; }
 
 .publicidad {
   grid-area: publicidad;
@@ -65,7 +67,8 @@
   .publicidad .articuloPubli {
     margin-top: 5px;
     background-color: #f5853f;
-    text-align: justify; }
+    text-align: justify;
+    font-size: medium; }
 
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -75,53 +78,67 @@
     grid-template-columns: 80% 20%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "articuloEscuela publicidad" "articuloCanchas publicidad"; }
-  .menu1 ul {
-    background-color: rgba(211, 211, 211, 0.3);
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    height: 40px;
-    padding-top: 3px; }
-    .menu1 ul li {
-      border: solid 2px black;
-      background-color: #e2f89c;
-      padding: 3px; }
-      .menu1 ul li:hover {
-        background-image: linear-gradient(#e2f89c, #7adfbb);
-        font-size: larger;
-        padding: 5px;
-        transition: all .1s; }
   .articuloEscuela {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     background-color: rgba(245, 245, 245, 0.2); }
+    .articuloEscuela .tituloEscuela {
+      width: 60%;
+      text-align: right; }
     .articuloEscuela .cajaImagen {
-      width: 100px;
-      height: 100px;
-      background-color: #7adfbb;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(211, 211, 211, 0.7);
+      border-radius: 5px; }
+      .articuloEscuela .cajaImagen .imagenEscuela {
+        width: 95%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 15px; }
+    .articuloEscuela .textoIndex {
+      width: 70%;
+      color: black;
+      font-family: "Cooper-hewitt";
+      font-size: x-large; }
+  .articuloCanchas {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.2); }
+    .articuloCanchas .tituloCanchas {
+      width: 60%;
+      text-align: right; }
+    .articuloCanchas .cajaImagen {
+      width: 100%;
+      height: 100%;
       padding-right: 5px;
       background-color: rgba(211, 211, 211, 0.7);
       border-radius: 5px; }
-      .articuloEscuela .cajaImagen .imagenIndex {
+      .articuloCanchas .cajaImagen .imagenCanchas {
         width: 100%;
         height: 100%;
-        padding-left: 10px;
-        padding-top: 10px;
-        border-radius: 5px; }
-      .articuloEscuela .cajaImagen h2 {
-        display: inline-block; }
-    .articuloEscuela .textoIndex {
-      width: 100%;
+        padding: 10px;
+        border-radius: 15px; }
+    .articuloCanchas .textoIndex {
+      padding-top: 30px;
+      width: 70%;
       color: black;
       font-family: "Cooper-hewitt";
-      font-size: large; }
+      font-size: x-large; }
   .publicidad {
-    background-color: #f5853f; }
+    display: flex;
+    flex-direction: column; }
+    .publicidad .articuloPubli {
+      background-color: rgba(245, 133, 63, 0.5);
+      width: 100%;
+      height: 50%;
+      font-family: "cooper-hewitt";
+      font-size: large;
+      padding: 30px;
+      padding-top: 50px; }
     .publicidad .imagenPubli {
       width: 100%;
-      height: 50%; } }
+      height: 50%;
+      border-radius: 10px; } }
 
 /* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
 nav {
