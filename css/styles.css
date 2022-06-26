@@ -84,7 +84,8 @@
     background-color: rgba(245, 245, 245, 0.2); }
     .articuloEscuela .tituloEscuela {
       width: 60%;
-      text-align: right; }
+      text-align: right;
+      color: black; }
     .articuloEscuela .cajaImagen {
       width: 100%;
       height: 100%;
@@ -106,7 +107,8 @@
     background-color: rgba(245, 245, 245, 0.2); }
     .articuloCanchas .tituloCanchas {
       width: 60%;
-      text-align: right; }
+      text-align: right;
+      color: black; }
     .articuloCanchas .cajaImagen {
       width: 100%;
       height: 100%;
@@ -209,13 +211,6 @@ td {
   font-style: italic;
   text-align: center; }
 
-.leyenda {
-  font-family: "cooper-hewitt";
-  font-style: italic; }
-
-.fondoGimnasio {
-  background-image: url(../imagen/gym-funcional.jpeg); }
-
 .articuloGimnasio {
   border: none;
   height: 300px;
@@ -276,15 +271,15 @@ a {
   width: 100%;
   font-family: "cooper-hewitt";
   font-style: italic;
-  color: #7dba84; }
+  color: black; }
 
 .infoServicios {
   grid-area: infoServicios;
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-size: "cooper-hewitt";
-  color: #7dba84;
+  font-family: "cooper-hewitt";
+  color: aliceblue;
   font-style: italic; }
   .infoServicios .cuadroDialogo {
     display: flex;
@@ -317,70 +312,108 @@ a {
       grid-area: boton;
       display: flex;
       flex-direction: column;
-      align-items: center; }
-  /* INICIA GRID DE SERVICIOS */
-  .servicios {
-    display: grid;
-    width: 100vw;
-    grid-template-rows: 20% 40%;
-    grid-template-columns: 100%;
-    grid-template-areas: "articuloServicios" "articuloGimnasio"; }
-  .articuloServicios {
-    grid-area: articuloServicios;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-  .articuloGimnasio {
-    grid-area: articuloGimnasio;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; } }
+      align-items: center; } }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+/* INICIA GRID DE SERVICIOS */
+.servicios {
+  display: grid;
+  width: 100vw;
+  grid-template-rows: 40% 60%;
+  grid-template-columns: 100%;
+  grid-template-areas: "articuloServicios" "articuloGimnasio"; }
+
+.articuloServicios {
+  grid-area: articuloServicios;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  background-color: rgba(245, 245, 245, 0.2); }
+  .articuloServicios .textoServicios {
+    color: black; }
+  .articuloServicios .tituloS {
+    color: black;
+    font-family: "BPdiet";
+    font-style: italic; }
+  .articuloServicios .leyenda {
+    color: black;
+    font-family: "BPdiet";
+    font-style: italic; }
+
+.articuloGimnasio {
+  grid-area: articuloGimnasio;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../imagen/gym-funcional.jpeg);
+  background-color: rgba(245, 245, 245, 0.5); }
+  .articuloGimnasio .textoServicios {
+    color: black;
+    margin-top: 15px; }
+  .articuloGimnasio .tituloS {
+    color: black;
+    font-family: "BPdiet";
+    font-style: italic; }
+  .articuloGimnasio .leyenda {
+    color: black;
+    font-style: italic;
+    font-family: "BPdiet"; }
+
+@media screen and (min-width: 768px) {
   .servicios {
     display: grid;
     width: 100vw;
     grid-template-rows: 100%;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "articuloServicios articuloGimnasio"; }
+  .articuloServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
   .articulogimnasio {
     display: flex;
     flex-direction: column;
     justify-content: space-around; } }
 
-@media screen and (min-width: 768px) {
-  /* uso de variables*/
-  .contenedorFooter {
-    background-color: rgba(48, 99, 142, 0.651);
-    border: 3px solid black;
-    border-radius: 3px;
-    display: grid;
-    width: 100vw;
-    padding: 15px;
-    grid-template-rows: 90%;
-    grid-template-columns: 80% 20%;
-    grid-template-areas: "infoUtil infoRedes"; }
-  .infoUtil {
-    grid-area: infoUtil;
-    color: white;
-    margin-left: 15px; }
-  .infoRedes {
-    grid-area: infoRedes;
-    display: flex;
-    padding-right: 5px; }
-    .infoRedes ul li {
-      padding-top: 15px 20px 0 0;
-      border: none; }
-  .tituloS {
-    color: #e2f89c; }
-  .leyenda {
-    color: #7adfbb; }
-  .texto {
-    color: black; }
-  .otro {
-    color: #30638e; }
-  .textoEscuela {
-    color: black;
-    font-family: "cooper-hewitt";
-    font-size: large; } }
+/* uso de variables*/
+.contenedorFooter {
+  background-color: rgba(48, 99, 142, 0.651);
+  border: 3px solid black;
+  border-radius: 3px;
+  display: grid;
+  width: 100vw;
+  padding: 15px;
+  grid-template-rows: 90%;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "infoUtil infoRedes"; }
+
+.infoUtil {
+  grid-area: infoUtil;
+  color: white;
+  margin-left: 15px; }
+
+.infoRedes {
+  grid-area: infoRedes;
+  display: flex;
+  padding-right: 5px; }
+  .infoRedes ul li {
+    padding-top: 15px 20px 0 0;
+    border: none; }
+
+.tituloS {
+  color: #e2f89c; }
+
+.leyenda {
+  color: #7adfbb; }
+
+.texto {
+  color: black; }
+
+.otro {
+  color: #30638e; }
+
+.textoEscuela {
+  color: black;
+  font-family: "cooper-hewitt";
+  font-size: large; }

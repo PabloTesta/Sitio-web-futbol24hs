@@ -130,6 +130,7 @@
         .tituloEscuela {
             width: 60%;
             text-align: right;
+            color: black;
         }
 
 
@@ -167,6 +168,7 @@
         .tituloCanchas {
             width: 60%;
             text-align: right;
+            color:black;
         }
 
         .cajaImagen {
@@ -202,10 +204,10 @@
 
         .articuloPubli {
             background-color: rgba(245, 133, 63, 0.5);
-            @include sizes(100%,50%);
+            @include sizes(100%, 50%);
             font-family: "cooper-hewitt";
             font-size: large;
-            padding:30px;
+            padding: 30px;
             padding-top: 50px;
 
 
@@ -321,17 +323,12 @@ td {
     text-align: center;
 
 
-}
-
-.leyenda {
-    font-family: "cooper-hewitt";
-    font-style: italic;
 
 }
 
-.fondoGimnasio {
-    background-image: url(../imagen/gym-funcional.jpeg);
-}
+
+
+
 
 .articuloGimnasio {
     border: none;
@@ -417,7 +414,7 @@ a {
     width: 100%;
     font-family: "cooper-hewitt";
     font-style: italic;
-    color: #7dba84;
+    color:black;
 }
 
 .infoServicios {
@@ -426,8 +423,8 @@ a {
     flex-direction: column;
 
     width: 100%;
-    font-size: "cooper-hewitt";
-    color: #7dba84;
+    font-family: "cooper-hewitt";
+    color: aliceblue;
     font-style: italic;
 
     .cuadroDialogo {
@@ -447,7 +444,7 @@ a {
         width: 100vw;
         grid-template-rows: 30% 30% 30%;
         grid-template-columns: 100%;
-        grid-template-areas: 
+        grid-template-areas:
             "infoPersonal"
             " infoServicios"
             " boton";
@@ -463,27 +460,28 @@ a {
         display: flex;
         flex-direction: column;
         font-size: "BPdiet";
-        color:aliceblue;
+        color: aliceblue;
         font-weight: 800;
-       legend{
-        text-align: center;
-       }
 
-    .boton {
-        grid-area: boton;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        legend {
+            text-align: center;
+        }
 
+        .boton {
+            grid-area: boton;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
 }
-
 
 /* INICIA GRID DE SERVICIOS */
 .servicios {
     display: grid;
     width: 100vw;
-    grid-template-rows: 20% 40%;
+    grid-template-rows: 40% 60%;
     grid-template-columns: 100%;
     grid-template-areas: "articuloServicios"
         "articuloGimnasio";
@@ -493,7 +491,24 @@ a {
     grid-area: articuloServicios;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    background-color: rgba(245, 245, 245, 0.2);
+    .textoServicios {
+        color: black;
+        
+        }
+        .tituloS{
+            color: black;
+            font-family: "BPdiet";
+            font-style: italic;
+        }
+        .leyenda{
+            color:black;
+            font-family: "BPdiet";
+            font-style: italic;
+        }
+
 }
 
 .articuloGimnasio {
@@ -502,6 +517,22 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+        background-image: url(../imagen/gym-funcional.jpeg);
+        background-color: rgba(245, 245, 245, 0.5);
+    .textoServicios {
+        color: black;
+        margin-top: 15px;
+    }
+    .tituloS{
+        color: black;
+        font-family: "BPdiet";
+        font-style: italic;
+    }
+    .leyenda{
+        color: black;
+        font-style: italic;
+        font-family: "BPdiet";
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -509,8 +540,13 @@ a {
         display: grid;
         width: 100vw;
         grid-template-rows: 100%;
-        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-columns: 50% 50%;
         grid-template-areas: "articuloServicios articuloGimnasio";
+    }
+    .articuloServicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .articulogimnasio {
@@ -518,6 +554,7 @@ a {
         flex-direction: column;
         justify-content: space-around;
     }
+
 }
 
 
@@ -561,10 +598,8 @@ $valor in $color-servicios {
     }
 }
 
- .textoEscuela {
+.textoEscuela {
     color: map-get($color-servicios, texto);
     font-family: "cooper-hewitt";
     font-size: large;
-} 
-
 }
