@@ -12,6 +12,32 @@
   font-family: "cooper-hewitt";
   src: url(../fonts/cooper-hewitt/CooperHewitt-HeavyItalic.otf); }
 
+body {
+  background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)), url(../imagen/cancha-panoramica1.jpeg);
+  width: 100vw; }
+
+.redes {
+  width: 30px;
+  height: 30px; }
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px; }
+
+h1 {
+  font-family: "BPdiet";
+  color: black;
+  overflow-wrap: break-word; }
+
+iframe {
+  height: 90%;
+  width: 99%; }
+
+.imgGaleria {
+  width: 90%;
+  display: block; }
+
 .header {
   background-color: rgba(48, 99, 142, 0.651);
   border: 2px solid black;
@@ -82,10 +108,6 @@
     display: flex;
     flex-direction: row;
     background-color: rgba(245, 245, 245, 0.2); }
-    .articuloEscuela .tituloEscuela {
-      width: 60%;
-      text-align: right;
-      color: black; }
     .articuloEscuela .cajaImagen {
       width: 100%;
       height: 100%;
@@ -105,10 +127,6 @@
     display: flex;
     flex-direction: row;
     background-color: rgba(245, 245, 245, 0.2); }
-    .articuloCanchas .tituloCanchas {
-      width: 60%;
-      text-align: right;
-      color: black; }
     .articuloCanchas .cajaImagen {
       width: 100%;
       height: 100%;
@@ -143,41 +161,7 @@
       border-radius: 10px; } }
 
 /* USO DE NESTING Y AMPERSON (&) EN EL HOVER  */
-nav {
-  width: 100vw; }
-
-.redes {
-  width: 30px;
-  height: 30px; }
-
-h1 {
-  font-family: "BPdiet";
-  color: black;
-  overflow-wrap: break-word; }
-
-h2 {
-  font-family: "cooper-hewitt";
-  margin: 5px;
-  font-weight: bold;
-  text-align: center; }
-
-iframe {
-  height: 90%;
-  width: 99%; }
-
-caption {
-  margin: 3px 40%;
-  padding: 5px;
-  font-style: italic;
-  caption-side: top;
-  color: #7adfbb;
-  text-align: center;
-  border: 2px solid black; }
-
-.texto {
-  font-family: "BPdiet";
-  font-style: italic; }
-
+/* FORMATO DE TABLA DE SECCION ESCUELITA */
 .articuloEscuelita {
   background-color: rgba(216, 211, 204, 0.5); }
 
@@ -194,64 +178,7 @@ tfoot,
 td {
   border: 3px solid black; }
 
-.fondoEscuela {
-  background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)), url(../imagen/imagen/escuelita.jpg); }
-
-.articuloServicios {
-  border: none;
-  height: 500px;
-  font-family: "cooper-hewitt";
-  text-align: center; }
-
-.textoServicios {
-  font-family: "cooper-hewitt";
-  font-style: italic;
-  text-align: center; }
-
-.articuloGimnasio {
-  border: none;
-  height: 300px;
-  font-family: "cooper-hewitt";
-  text-align: center; }
-
-body {
-  background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)), url(../imagen/cancha-panoramica1.jpeg);
-  width: 100vw; }
-
-.redes {
-  width: 30px;
-  height: 30px; }
-
-.borde {
-  border: 1px solid black;
-  margin: 5px; }
-
-.navegacion ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-li {
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 3px; }
-
-a {
-  font-family: "cooper-hewitt";
-  font-style: italic;
-  color: #7dba84; }
-
-.imgGaleria {
-  width: 90%;
-  display: block; }
-
-.textoNav {
-  display: inline; }
-
-.menu li {
-  border: none;
-  overflow-wrap: break-word; }
-
+/* TERMINA FORMATO DE TABLA DE SECCION ESCUELITA */
 /* INICIA GRID CONTACTO */
 .contacto {
   display: grid;
@@ -320,6 +247,23 @@ a {
   grid-template-areas: "articuloServicios" "articuloGimnasio"; }
 
 .articuloServicios {
+  border: none;
+  height: 500px;
+  font-family: "cooper-hewitt";
+  text-align: center; }
+
+.textoServicios {
+  font-family: "cooper-hewitt";
+  font-style: italic;
+  text-align: center; }
+
+.articuloGimnasio {
+  border: none;
+  height: 300px;
+  font-family: "cooper-hewitt";
+  text-align: center; }
+
+.articuloServicios {
   grid-area: articuloServicios;
   display: flex;
   flex-direction: column;
@@ -328,14 +272,6 @@ a {
   background-color: rgba(245, 245, 245, 0.3); }
   .articuloServicios .textoServicios {
     color: black; }
-  .articuloServicios .tituloS {
-    color: black;
-    font-family: "BPdiet";
-    font-style: italic; }
-  .articuloServicios .leyenda {
-    color: black;
-    font-family: "BPdiet";
-    font-style: italic; }
 
 .articuloGimnasio {
   grid-area: articuloGimnasio;
@@ -348,14 +284,6 @@ a {
   .articuloGimnasio .textoServicios {
     color: black;
     margin-top: 15px; }
-  .articuloGimnasio .tituloS {
-    color: black;
-    font-family: "BPdiet";
-    font-style: italic; }
-  .articuloGimnasio .leyenda {
-    color: black;
-    font-style: italic;
-    font-family: "BPdiet"; }
 
 @media screen and (min-width: 768px) {
   .servicios {
@@ -368,16 +296,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    .articuloServicios .textoServicios {
-      color: black; }
   .articuloGimnasio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: black;
-    background-color: rgba(245, 245, 245, 0.3); }
-    .articuloGimnasio .textoServicios {
-      color: black; } }
+    background-color: rgba(245, 245, 245, 0.3); } }
 
 /* uso de variables*/
 .contenedorFooter {
@@ -405,18 +328,43 @@ a {
     border: none; }
 
 .tituloS {
-  color: #e2f89c; }
+  color: #2faac0; }
 
 .leyenda {
-  color: #7adfbb; }
+  color: #76c06c; }
 
-.texto {
-  color: black; }
+.tituloEscuela {
+  color: #2faac0; }
 
 .otro {
-  color: #30638e; }
+  color: black; }
 
 .textoEscuela {
-  color: black;
   font-family: "cooper-hewitt";
   font-size: large; }
+
+.tituloEscuela {
+  color: #2faac0;
+  font-family: "BPdiet";
+  font-style: italic;
+  width: 60%;
+  text-align: right;
+  font-size: large; }
+
+.tituloCanchas {
+  width: 60%;
+  text-align: right;
+  color: #2faac0;
+  font-family: "BPdiet";
+  font-style: italic;
+  font-size: large; }
+
+.tituloS {
+  color: #2faac0;
+  font-family: "BPdiet";
+  font-style: italic; }
+
+.leyenda {
+  color: #76c06c;
+  font-family: "BPdiet";
+  font-style: italic; }
