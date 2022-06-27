@@ -303,11 +303,7 @@ td {
 
 }
 
-.fondoCanchas {
-    background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)),
-        url(../imagen/cancha-panoramica.jpeg);
 
-}
 
 .articuloServicios {
     border: none;
@@ -517,12 +513,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-        background-image: url(../imagen/gym-funcional.jpeg);
-        background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.2);
+    border-radius: 15px;
     .textoServicios {
         color: black;
         margin-top: 15px;
     }
+    
     .tituloS{
         color: black;
         font-family: "BPdiet";
@@ -553,6 +550,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background-color: rgba(245, 245, 245, 0.5);
     }
 
 }
