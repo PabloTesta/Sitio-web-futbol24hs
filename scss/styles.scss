@@ -597,8 +597,7 @@ a {
     }
 }
 
-@each $color,
-$valor in $color-servicios {
+@each $color, $valor in $color-servicios {
     .#{$color} {
         color: $valor;
     }
