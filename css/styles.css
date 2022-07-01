@@ -164,18 +164,14 @@ iframe {
 .contenedorPrincipal {
   display: flex;
   flex-direction: row;
-  height: 75vh; }
-  .contenedorPrincipal .carrusel {
-    width: 100%;
-    height: 100%; }
-    .contenedorPrincipal .carrusel .imagenEscuela {
-      width: 50vw;
-      height: 70vh; }
+  justify-content: space-around; }
+  .contenedorPrincipal .imagenEscuela {
+    width: 50vw; }
 
 /* FORMATO DE TABLA DE SECCION ESCUELITA */
 .articuloEscuelita {
   background-color: rgba(216, 211, 204, 0.5);
-  height: 70vh; }
+  height: 70%; }
 
 table {
   width: 100%;

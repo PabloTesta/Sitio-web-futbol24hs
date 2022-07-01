@@ -255,19 +255,18 @@ iframe {
 .contenedorPrincipal{
     display:flex;
     flex-direction: row;
-    height: 75vh;
+    justify-content: space-around;
     
     
-    .carrusel{
-        width:100%;
-        height:100%;
+    
+   
+    
+    .imagenEscuela{
+        width: 50vw;
         
-        .imagenEscuela{
-            width:50vw;
-            height: 70vh;
-            
-        }
-            }
+        
+    }
+    
 }
 
 
@@ -278,7 +277,9 @@ iframe {
 /* FORMATO DE TABLA DE SECCION ESCUELITA */
 .articuloEscuelita {
     background-color: rgba(216, 211, 204, 0.5);
-    height: 70vh;
+    height: 70%;
+    
+    
 }
 
 table {
