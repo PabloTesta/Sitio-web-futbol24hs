@@ -265,8 +265,11 @@ iframe {
 .contenedorEscuela{
     grid-area:contenedorEscuela;
     margin-top:5px;
+    .carrusel{
+        height: 100%;
+    }
     .imagenEscuela{
-        width:100%;
+         width:100%;
         height: 100%;
         border-radius: 3px;
     }

@@ -172,6 +172,8 @@ iframe {
 .contenedorEscuela {
   grid-area: contenedorEscuela;
   margin-top: 5px; }
+  .contenedorEscuela .carrusel {
+    height: 100%; }
   .contenedorEscuela .imagenEscuela {
     width: 100%;
     height: 100%;
