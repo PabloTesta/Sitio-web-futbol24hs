@@ -251,21 +251,35 @@ iframe {
 }
 
 /* ARRANCA CSS DE ESCUELA DE FUTBOL */
+.contenedorEscuela{
+    display:grid;
+    width:98vw;
+    gap:5px;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "contenedorEscuela"
+    "articuloEscuela"
+    "tabla"
+}
 
-.contenedorPrincipal{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    
-    
-   
-    
+.contenedorEscuela{
+    grid-area:contenedorEscuela;
+    margin-top:5px;
     .imagenEscuela{
-        width: 50vw;
-        
-        
+        width:100%;
+        border-radius: 3px;
     }
+}
+.articuloEscuela{
+    grid-area:articuloEscuela;
+    background-color: rgba(216, 211, 204, 0.5);
+    padding: 3px;
+    width: 98vw;
+    border-radius: 3px;
+       
+}
+.tabla{
+    grid-area:tabla;
     
 }
 
@@ -275,12 +289,7 @@ iframe {
 
 
 /* FORMATO DE TABLA DE SECCION ESCUELITA */
-.articuloEscuelita {
-    background-color: rgba(216, 211, 204, 0.5);
-    height: 70%;
-    
-    
-}
+
 
 table {
     width: 100%;
