@@ -256,8 +256,8 @@ iframe {
     width:98vw;
     gap:5px;
     grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "contenedorEscuela"
+    grid-template-rows: 0.5fr 0.4fr 0.5fr;
+    grid-template-areas: "contenedorPrincipal"
     "articuloEscuela"
     "tabla"
 }
@@ -286,17 +286,53 @@ iframe {
     grid-area:tabla;
     
 }
+@media screen and (min-width:768px) {
+    .contenedorEscuela{
+        display:grid;
+        gap:5px;
+        width:99vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 65% 35%;
+        grid-template-areas: "contenedorPrincipal articuloEscuela"
+        "tabla tabla";
+    }
+.carousel-inner{
+    .imagenEscuela{
+        height: 130vh;
+    }
+}
+  .articuloEscuela{
+    width:97%;
+    height: 100%;
+    text-align:center ;
+         }  
+}
 
-
-
-
-
+@media screen and (min-width:1500px) {
+    .contenedorEscuela{
+        display:grid;
+        gap:5px;
+        width:99vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 65% 35%;
+        grid-template-areas: "contenedorPrincipal articuloEscuela"
+        "tabla tabla";
+    }
+    .carousel-inner{
+        .imagenEscuela{
+            height: 70vh;
+        }
+    }
+    .articuloEscuela{
+        padding-top: 60px;
+    }
+}
 
 /* FORMATO DE TABLA DE SECCION ESCUELITA */
 
 
 table {
-    width: 100%;
+    width:100%;
     border: 3px solid black;
     border-collapse: collapse;
 }
@@ -550,7 +586,7 @@ $valor in $color-servicios {
 .textoEscuela {
     color: map-get($color-servicios, texto);
     font-family: "cooper-hewitt";
-    font-size: large;
+    font-size:medium;
 }
 
 .tituloEscuela {

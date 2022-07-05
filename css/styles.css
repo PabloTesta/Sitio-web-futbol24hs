@@ -166,8 +166,8 @@ iframe {
   width: 98vw;
   gap: 5px;
   grid-template-columns: 100%;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
-  grid-template-areas: "contenedorEscuela" "articuloEscuela" "tabla"; }
+  grid-template-rows: 0.5fr 0.4fr 0.5fr;
+  grid-template-areas: "contenedorPrincipal" "articuloEscuela" "tabla"; }
 
 .contenedorEscuela {
   grid-area: contenedorEscuela;
@@ -188,6 +188,34 @@ iframe {
 
 .tabla {
   grid-area: tabla; }
+
+@media screen and (min-width: 768px) {
+  .contenedorEscuela {
+    display: grid;
+    gap: 5px;
+    width: 99vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "contenedorPrincipal articuloEscuela" "tabla tabla"; }
+  .carousel-inner .imagenEscuela {
+    height: 130vh; }
+  .articuloEscuela {
+    width: 97%;
+    height: 100%;
+    text-align: center; } }
+
+@media screen and (min-width: 1500px) {
+  .contenedorEscuela {
+    display: grid;
+    gap: 5px;
+    width: 99vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "contenedorPrincipal articuloEscuela" "tabla tabla"; }
+  .carousel-inner .imagenEscuela {
+    height: 70vh; }
+  .articuloEscuela {
+    padding-top: 60px; } }
 
 /* FORMATO DE TABLA DE SECCION ESCUELITA */
 table {
@@ -366,7 +394,7 @@ td {
 
 .textoEscuela {
   font-family: "cooper-hewitt";
-  font-size: large; }
+  font-size: medium; }
 
 .tituloEscuela {
   color: #2faac0;
