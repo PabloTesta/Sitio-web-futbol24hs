@@ -295,45 +295,34 @@ td {
 .servicios {
   display: grid;
   width: 100vw;
-  grid-template-rows: 40% 60%;
+  gap: 3px;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 100%;
   grid-template-areas: "articuloServicios" "articuloGimnasio"; }
-
-.articuloServicios {
-  border: none;
-  height: 500px;
-  font-family: "cooper-hewitt";
-  text-align: center; }
-
-.textoServicios {
-  font-family: "cooper-hewitt";
-  font-style: italic;
-  text-align: center; }
-
-.articuloGimnasio {
-  border: none;
-  height: 300px;
-  font-family: "cooper-hewitt";
-  text-align: center; }
 
 .articuloServicios {
   grid-area: articuloServicios;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
-  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 3px;
+  margin: 3px;
   background-color: rgba(245, 245, 245, 0.3); }
   .articuloServicios .textoServicios {
-    color: black; }
+    color: black;
+    font-family: "cooper-hewitt";
+    font-style: italic; }
 
 .articuloGimnasio {
   grid-area: articuloGimnasio;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(245, 245, 245, 0.3);
-  border-radius: 15px; }
+  border-radius: 3px;
+  margin: 3px;
+  font-family: "cooper-hewitt";
+  text-align: center; }
   .articuloGimnasio .textoServicios {
     color: black;
     margin-top: 15px; }
@@ -343,7 +332,7 @@ td {
     display: grid;
     width: 100vw;
     grid-template-rows: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "articuloServicios articuloGimnasio"; }
   .articuloServicios {
     display: flex;
@@ -357,15 +346,16 @@ td {
 
 /* uso de variables*/
 .contenedorFooter {
-  background-color: rgba(48, 99, 142, 0.651);
-  border: 3px solid black;
-  border-radius: 3px;
   display: grid;
   width: 100vw;
-  padding: 15px;
   grid-template-rows: 90%;
   grid-template-columns: 80% 20%;
-  grid-template-areas: "infoUtil infoRedes"; }
+  grid-template-areas: "infoUtil infoRedes";
+  background-color: rgba(48, 99, 142, 0.651);
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 15px; }
 
 .infoUtil {
   grid-area: infoUtil;
