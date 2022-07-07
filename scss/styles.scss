@@ -81,63 +81,24 @@ iframe {
     width: 100vw;
     gap: 5px;
     grid-template-columns: 100%;
-    grid-template-rows: 0.3fr 0.3fr 5%;
-    grid-template-areas: "articuloEscuela"
-        "articuloCanchas"
-        "publicidad"
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "carruselImagen"
+        "carruselTexto"
+        
 
 }
 
-
-.articuloEscuela {
-    grid-area: articuloEscuela;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(48, 99, 142, 0.85);
-    width: 100vw;
-
-    .imagenEscuela {
+.carruselImagen{
+    grid-area: carruselImagen;
+    margin:5px;
+    .imagenEscuela{
         width: 100%;
-    }
-
-}
-
-.textoIndex {
-    padding: 4px;
-    text-align: justify;
-}
-
-.articuloCanchas {
-    grid-area: articuloCanchas;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(125, 186, 132, 0.85);
-    width: 100vw;
-
-    .imagenCanchas {
-        width: 100%;
-    }
-
-
-}
-
-.publicidad {
-    grid-area: publicidad;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .imagenPubli {
-        width: 45%;
         height: 100%;
+        border-radius:3px;
     }
-
-    .articuloPubli {
-        margin-top: 5px;
-        background-color: rgb(245, 133, 63);
-        text-align: justify;
-        font-size: medium;
-    }
+}
+.carruselTexto{
+    grid-area: carruselTexto;
 }
 
 
@@ -171,19 +132,23 @@ iframe {
             border-radius: 5px;
 
 
+.carousel-inner{
+    width:100%;
+    height:100%;
 
             .imagenEscuela {
                 width: 95%;
                 height: 100%;
                 padding: 5px;
                 border-radius: 15px;
+                
             }
-
+        }
         }
 
         .textoIndex {
             width: 70%;
-            color: black;
+            color: white;
             font-family: "Cooper-hewitt";
             font-size: x-large;
         }

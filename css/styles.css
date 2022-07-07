@@ -57,44 +57,19 @@ iframe {
   width: 100vw;
   gap: 5px;
   grid-template-columns: 100%;
-  grid-template-rows: 0.3fr 0.3fr 5%;
-  grid-template-areas: "articuloEscuela" "articuloCanchas" "publicidad"; }
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "carruselImagen" "carruselTexto"; }
 
-.articuloEscuela {
-  grid-area: articuloEscuela;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(48, 99, 142, 0.85);
-  width: 100vw; }
-  .articuloEscuela .imagenEscuela {
-    width: 100%; }
+.carruselImagen {
+  grid-area: carruselImagen;
+  margin: 5px; }
+  .carruselImagen .imagenEscuela {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px; }
 
-.textoIndex {
-  padding: 4px;
-  text-align: justify; }
-
-.articuloCanchas {
-  grid-area: articuloCanchas;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(125, 186, 132, 0.85);
-  width: 100vw; }
-  .articuloCanchas .imagenCanchas {
-    width: 100%; }
-
-.publicidad {
-  grid-area: publicidad;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .publicidad .imagenPubli {
-    width: 45%;
-    height: 100%; }
-  .publicidad .articuloPubli {
-    margin-top: 5px;
-    background-color: #f5853f;
-    text-align: justify;
-    font-size: medium; }
+.carruselTexto {
+  grid-area: carruselTexto; }
 
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -113,14 +88,17 @@ iframe {
       height: 100%;
       background-color: rgba(211, 211, 211, 0.7);
       border-radius: 5px; }
-      .articuloEscuela .cajaImagen .imagenEscuela {
-        width: 95%;
-        height: 100%;
-        padding: 5px;
-        border-radius: 15px; }
+      .articuloEscuela .cajaImagen .carousel-inner {
+        width: 100%;
+        height: 100%; }
+        .articuloEscuela .cajaImagen .carousel-inner .imagenEscuela {
+          width: 95%;
+          height: 100%;
+          padding: 5px;
+          border-radius: 15px; }
     .articuloEscuela .textoIndex {
       width: 70%;
-      color: black;
+      color: white;
       font-family: "Cooper-hewitt";
       font-size: x-large; }
   .articuloCanchas {
