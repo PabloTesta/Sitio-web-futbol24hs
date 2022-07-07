@@ -99,6 +99,14 @@ iframe {
 }
 .carruselTexto{
     grid-area: carruselTexto;
+    text-align: center;
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    background-color: $fondo-servicios;
+    color: map-get($color-servicios, otro );
+    margin:5px;
+    padding: 5px;
+    border-radius:3px;
 }
 
 

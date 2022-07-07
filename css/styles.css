@@ -69,7 +69,15 @@ iframe {
     border-radius: 3px; }
 
 .carruselTexto {
-  grid-area: carruselTexto; }
+  grid-area: carruselTexto;
+  text-align: center;
+  font-family: "cooper-hewitt";
+  font-style: italic;
+  background-color: rgba(245, 245, 245, 0.3);
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px; }
 
 @media screen and (min-width: 768px) {
   .contenedor {
