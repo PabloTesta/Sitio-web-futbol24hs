@@ -17,6 +17,7 @@
     font-family: "cooper-hewitt";
     src: url(../fonts/cooper-hewitt/CooperHewitt-HeavyItalic.otf)
 }
+
 body {
     background-image: linear-gradient(rgba(5, 7, 12, 0), rgba(5, 7, 12, 0)), $fondo-body;
     width: 100vw;
@@ -84,29 +85,31 @@ iframe {
     grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: "carruselImagen"
         "carruselTexto"
-        
+
 
 }
 
-.carruselImagen{
+.carruselImagen {
     grid-area: carruselImagen;
-    margin:5px;
-    .imagenEscuela{
+    margin: 5px;
+
+    .imagenEscuela {
         width: 100%;
         height: 100%;
-        border-radius:3px;
+        border-radius: 3px;
     }
 }
-.carruselTexto{
+
+.carruselTexto {
     grid-area: carruselTexto;
     text-align: center;
     font-family: "cooper-hewitt";
     font-style: italic;
     background-color: $fondo-servicios;
-    color: map-get($color-servicios, otro );
-    margin:5px;
+    color: map-get($color-servicios, otro);
+    margin: 5px;
     padding: 5px;
-    border-radius:3px;
+    border-radius: 3px;
 }
 
 
@@ -116,187 +119,130 @@ iframe {
 @media screen and (min-width:768px) {
     .contenedor {
         display: grid;
-        width: 100vw;
-        gap: 5px;
-        grid-template-columns: 80% 20%;
+        width: 98vw;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
-        grid-template-areas: "articuloEscuela publicidad"
-            "articuloCanchas publicidad";
-    }
-
-
-
-    .articuloEscuela {
-        display: flex;
-        flex-direction: row;
-        background-color: rgba(245, 245, 245, 0.2);
-
-
-
-        .cajaImagen {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(211, 211, 211, 0.7);
-            border-radius: 5px;
-
-
-.carousel-inner{
-    width:100%;
-    height:100%;
-
-            .imagenEscuela {
-                width: 95%;
-                height: 100%;
-                padding: 5px;
-                border-radius: 15px;
-                
-            }
-        }
-        }
-
-        .textoIndex {
-            width: 70%;
-            color: white;
-            font-family: "Cooper-hewitt";
-            font-size: x-large;
-        }
+        grid-template-areas: "carruselImagen carruselTexto"
+            "carruselImagen publicidad";
 
     }
-
-    .articuloCanchas {
-        display: flex;
-        flex-direction: row;
-        background-color: rgba(245, 245, 245, 0.2);
-
-
-        .cajaImagen {
-            width: 100%;
-            height: 100%;
-            padding-right: 5px;
-            background-color: rgba(211, 211, 211, 0.7);
-            border-radius: 5px;
-
-            .imagenCanchas {
-                width: 100%;
-                height: 100%;
-                padding: 10px;
-                border-radius: 15px;
-            }
-        }
-
-        .textoIndex {
-            padding-top: 30px;
-            width: 70%;
-            color: black;
-            font-family: "Cooper-hewitt";
-            font-size: x-large;
-        }
-
-
+.publicidad{
+    margin-left:30%;
+}
+    .textoPubli {
+        
+        width:60%;
+        text-align:center;
+        font-family: "cooper-hewitt";
+        font-style: italic;
+        background-color: $fondo-servicios;
+        color: map-get($color-servicios, otro);
+        margin: 5px;
+        padding: 20px;
+        border-radius: 3px;
+        
     }
-
-    .publicidad {
-        display: flex;
-        flex-direction: column;
-
-
-        .articuloPubli {
-            background-color: rgba(245, 133, 63, 0.5);
-            @include sizes(100%, 50%);
-            font-family: "cooper-hewitt";
-            font-size: large;
-            padding: 30px;
-            padding-top: 50px;
-
-
-        }
-
+    .contenedorImagen {
         .imagenPubli {
-            @include sizes(100%, 50%);
-            border-radius: 10px;
-
+            height: 245px;
+            width:70%;
+            border-radius: 3px;
+            
         }
     }
-
-
-
 
 }
 
+
+
+
+
+
+
+
 /* ARRANCA CSS DE ESCUELA DE FUTBOL */
-.contenedorEscuela{
-    display:grid;
-    width:98vw;
-    gap:5px;
+.contenedorEscuela {
+    display: grid;
+    width: 98vw;
+    gap: 5px;
     grid-template-columns: 100%;
     grid-template-rows: 0.5fr 0.4fr 0.5fr;
     grid-template-areas: "contenedorPrincipal"
-    "articuloEscuela"
-    "tabla"
+        "articuloEscuela"
+        "tabla"
 }
 
-.contenedorEscuela{
-    grid-area:contenedorEscuela;
-    margin-top:5px;
-    .carrusel{
+.contenedorEscuela {
+    grid-area: contenedorEscuela;
+    margin-top: 5px;
+
+    .carrusel {
         height: 100%;
     }
-    .imagenEscuela{
-         width:100%;
+
+    .imagenEscuela {
+        width: 100%;
         height: 100%;
         border-radius: 3px;
     }
 }
-.articuloEscuela{
-    grid-area:articuloEscuela;
+
+.articuloEscuela {
+    grid-area: articuloEscuela;
     background-color: rgba(216, 211, 204, 0.5);
     padding: 3px;
     width: 98vw;
     border-radius: 3px;
-       
+
 }
-.tabla{
-    grid-area:tabla;
-    
+
+.tabla {
+    grid-area: tabla;
+
 }
+
 @media screen and (min-width:768px) {
-    .contenedorEscuela{
-        display:grid;
-        gap:5px;
-        width:99vw;
+    .contenedorEscuela {
+        display: grid;
+        gap: 5px;
+        width: 99vw;
         grid-template-columns: 50% 50%;
         grid-template-rows: 65% 35%;
         grid-template-areas: "contenedorPrincipal articuloEscuela"
-        "tabla tabla";
+            "tabla tabla";
     }
-.carousel-inner{
-    .imagenEscuela{
-        height: 130vh;
+
+    .carousel-inner {
+        .imagenEscuela {
+            height: 130vh;
+        }
     }
-}
-  .articuloEscuela{
-    width:97%;
-    height: 100%;
-    text-align:center ;
-         }  
+
+    .articuloEscuela {
+        width: 97%;
+        height: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:1500px) {
-    .contenedorEscuela{
-        display:grid;
-        gap:5px;
-        width:99vw;
+    .contenedorEscuela {
+        display: grid;
+        gap: 5px;
+        width: 99vw;
         grid-template-columns: 50% 50%;
         grid-template-rows: 65% 35%;
         grid-template-areas: "contenedorPrincipal articuloEscuela"
-        "tabla tabla";
+            "tabla tabla";
     }
-    .carousel-inner{
-        .imagenEscuela{
+
+    .carousel-inner {
+        .imagenEscuela {
             height: 70vh;
         }
     }
-    .articuloEscuela{
+
+    .articuloEscuela {
         padding-top: 60px;
     }
 }
@@ -305,7 +251,7 @@ iframe {
 
 
 table {
-    width:100%;
+    width: 100%;
     border: 3px solid black;
     border-collapse: collapse;
 }
@@ -411,7 +357,7 @@ td {
 .servicios {
     display: grid;
     width: 100vw;
-    gap:3px;
+    gap: 3px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%;
     grid-template-areas: "articuloServicios"
@@ -424,7 +370,7 @@ td {
     flex-direction: column;
     text-align: center;
     border-radius: 3px;
-    margin:3px;
+    margin: 3px;
     background-color: rgba(245, 245, 245, 0.3);
 
     .textoServicios {
@@ -443,7 +389,7 @@ td {
     justify-content: space-around;
     background-color: $fondo-servicios;
     border-radius: 3px;
-    margin:3px;
+    margin: 3px;
     font-family: "cooper-hewitt";
     text-align: center;
 
@@ -452,7 +398,7 @@ td {
         margin-top: 15px;
     }
 
-    
+
 }
 
 @media screen and (min-width:768px) {
@@ -486,15 +432,15 @@ td {
 .contenedorFooter {
     display: grid;
     width: 100vw;
-    grid-template-rows:90%;
+    grid-template-rows: 90%;
     grid-template-columns: 80% 20%;
     grid-template-areas: "infoUtil infoRedes";
     background-color: $color-header;
-    margin-top:20px;
+    margin-top: 20px;
     border: 3px solid black;
     border-radius: 3px;
     padding: 15px;
-    
+
 }
 
 .infoUtil {
@@ -527,7 +473,7 @@ $valor in $color-servicios {
 .textoEscuela {
     color: map-get($color-servicios, texto);
     font-family: "cooper-hewitt";
-    font-size:medium;
+    font-size: medium;
 }
 
 .tituloEscuela {

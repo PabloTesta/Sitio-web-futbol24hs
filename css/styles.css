@@ -73,7 +73,7 @@ iframe {
   text-align: center;
   font-family: "cooper-hewitt";
   font-style: italic;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(245, 245, 245, 0.5);
   color: black;
   margin: 5px;
   padding: 5px;
@@ -82,69 +82,26 @@ iframe {
 @media screen and (min-width: 768px) {
   .contenedor {
     display: grid;
-    width: 100vw;
-    gap: 5px;
-    grid-template-columns: 80% 20%;
+    width: 98vw;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "articuloEscuela publicidad" "articuloCanchas publicidad"; }
-  .articuloEscuela {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(245, 245, 245, 0.2); }
-    .articuloEscuela .cajaImagen {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(211, 211, 211, 0.7);
-      border-radius: 5px; }
-      .articuloEscuela .cajaImagen .carousel-inner {
-        width: 100%;
-        height: 100%; }
-        .articuloEscuela .cajaImagen .carousel-inner .imagenEscuela {
-          width: 95%;
-          height: 100%;
-          padding: 5px;
-          border-radius: 15px; }
-    .articuloEscuela .textoIndex {
-      width: 70%;
-      color: white;
-      font-family: "Cooper-hewitt";
-      font-size: x-large; }
-  .articuloCanchas {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(245, 245, 245, 0.2); }
-    .articuloCanchas .cajaImagen {
-      width: 100%;
-      height: 100%;
-      padding-right: 5px;
-      background-color: rgba(211, 211, 211, 0.7);
-      border-radius: 5px; }
-      .articuloCanchas .cajaImagen .imagenCanchas {
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        border-radius: 15px; }
-    .articuloCanchas .textoIndex {
-      padding-top: 30px;
-      width: 70%;
-      color: black;
-      font-family: "Cooper-hewitt";
-      font-size: x-large; }
+    grid-template-areas: "carruselImagen carruselTexto" "carruselImagen publicidad"; }
   .publicidad {
-    display: flex;
-    flex-direction: column; }
-    .publicidad .articuloPubli {
-      background-color: rgba(245, 133, 63, 0.5);
-      width: 100%;
-      height: 50%;
-      font-family: "cooper-hewitt";
-      font-size: large;
-      padding: 30px;
-      padding-top: 50px; }
-    .publicidad .imagenPubli {
-      width: 100%;
-      height: 50%;
-      border-radius: 10px; } }
+    margin-left: 30%; }
+  .textoPubli {
+    width: 60%;
+    text-align: center;
+    font-family: "cooper-hewitt";
+    font-style: italic;
+    background-color: rgba(245, 245, 245, 0.5);
+    color: black;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 3px; }
+  .contenedorImagen .imagenPubli {
+    height: 245px;
+    width: 70%;
+    border-radius: 3px; } }
 
 /* ARRANCA CSS DE ESCUELA DE FUTBOL */
 .contenedorEscuela {
@@ -304,7 +261,7 @@ td {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(245, 245, 245, 0.5);
   border-radius: 3px;
   margin: 3px;
   font-family: "cooper-hewitt";
@@ -328,7 +285,7 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgba(245, 245, 245, 0.3); } }
+    background-color: rgba(245, 245, 245, 0.5); } }
 
 /* uso de variables*/
 .contenedorFooter {
