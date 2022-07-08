@@ -73,7 +73,7 @@ iframe {
   text-align: center;
   font-family: "cooper-hewitt";
   font-style: italic;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(245, 245, 245, 0.4);
   color: black;
   margin: 5px;
   padding: 5px;
@@ -93,7 +93,7 @@ iframe {
     text-align: center;
     font-family: "cooper-hewitt";
     font-style: italic;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.4);
     color: black;
     margin: 5px;
     padding: 20px;
@@ -261,7 +261,7 @@ td {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(245, 245, 245, 0.4);
   border-radius: 3px;
   margin: 3px;
   font-family: "cooper-hewitt";
@@ -280,12 +280,13 @@ td {
   .articuloServicios {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    background-color: rgba(245, 245, 245, 0.4); }
   .articuloGimnasio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgba(245, 245, 245, 0.5); } }
+    background-color: rgba(245, 245, 245, 0.4); } }
 
 /* uso de variables*/
 .contenedorFooter {
