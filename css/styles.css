@@ -94,7 +94,7 @@ iframe {
     .textoPrincipal .textoIndex {
       font-family: "cooper-hewitt";
       font-style: italic;
-      padding-top: 5%; }
+      padding-top: 10%; }
   .publicidad {
     grid-area: publicidad;
     display: flex;
