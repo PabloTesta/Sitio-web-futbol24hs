@@ -90,12 +90,10 @@ iframe {
       width: 100%;
       height: 70vh; }
   .textoPrincipal {
-    width: 100%;
-    height: 50vh; }
+    width: 100%; }
     .textoPrincipal .textoIndex {
       font-family: "cooper-hewitt";
-      font-style: italic;
-      font-size: larger; }
+      font-style: italic; }
   .publicidad {
     grid-area: publicidad;
     display: flex;
