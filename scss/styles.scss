@@ -94,11 +94,11 @@ iframe {
     grid-area: carruselImagen;
     margin: 5px;
 
-    .imagenEscuela {
+     .imagenEscuela {
         width: 100%;
         height: 100%;
         border-radius: 3px;
-    }
+    } 
 }
 
 .carruselTexto {
@@ -122,30 +122,35 @@ iframe {
         display: grid;
         width: 98vw;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 0.3fr 0.3fr;
+        grid-template-rows: 1fr 0.3fr;
         grid-template-areas: "carruselImagen carruselTexto"
             "publicidad publicidad";
-      
-           
+
+    
     }
-  
-       .textoIndex{
-        padding-top:70px;
+    .carousel-inner{
+        .imagenEscuela{
+            height:100vh ;
+        }
+    }
+    .textoIndex {
+        padding-top: 70px;
         font-family: "cooper-hewitt";
         font-style: italic;
-        font-size:larger;
-       } 
-   
-.publicidad{
-    grid-area: publicidad;
-    display:flex;
-    flex-direction: row;
-    margin-left:30%;
-}
+        font-size: larger;
+    }
+
+    .publicidad {
+        grid-area: publicidad;
+        display: flex;
+        flex-direction: row;
+        margin-left: 30%;
+    }
+
     .textoPubli {
-        
-        width:60%;
-        text-align:center;
+
+        width: 60%;
+        text-align: center;
         font-family: "cooper-hewitt";
         font-style: italic;
         background-color: $fondo-servicios;
@@ -153,14 +158,15 @@ iframe {
         margin: 5px;
         padding: 20px;
         border-radius: 3px;
-        
+
     }
+
     .contenedorImagen {
         .imagenPubli {
             height: 245px;
-            width:70%;
+            width: 70%;
             border-radius: 3px;
-            
+
         }
     }
 
@@ -227,7 +233,7 @@ iframe {
 
     .carousel-inner {
         .imagenEscuela {
-            height: 130vh;
+            height: 100vh;
         }
     }
 
@@ -427,7 +433,7 @@ td {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color:$fondo-servicios;
+        background-color: $fondo-servicios;
 
 
     }
