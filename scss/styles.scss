@@ -89,6 +89,7 @@ iframe {
 
 }
 
+
 .carruselImagen {
     grid-area: carruselImagen;
     margin: 5px;
@@ -123,15 +124,20 @@ iframe {
         grid-template-columns: 50% 50%;
         grid-template-rows: 0.3fr 0.3fr;
         grid-template-areas: "carruselImagen carruselTexto"
-            "carruselImagen publicidad";
-
+            "publicidad publicidad";
+      
+           
     }
-  .imagenEscuela{
-    height: 70vh;
-  }
-        
+  
+       .textoIndex{
+        padding-top:70px;
+        font-family: "cooper-hewitt";
+        font-style: italic;
+        font-size:larger;
+       } 
    
 .publicidad{
+    grid-area: publicidad;
     display:flex;
     flex-direction: row;
     margin-left:30%;
