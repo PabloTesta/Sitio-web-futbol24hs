@@ -94,7 +94,7 @@ iframe {
     grid-area: carruselImagen;
     margin: 5px;
 
-     .imagenEscuela {
+     .imagenPrincipal {
         width: 100%;
         height: 100%;
         border-radius: 3px;
@@ -122,24 +122,28 @@ iframe {
         display: grid;
         width: 98vw;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 0.3fr;
+        grid-template-rows: 0.5fr 0.5fr;
         grid-template-areas: "carruselImagen carruselTexto"
             "publicidad publicidad";
-
-    
-    }
-    .carousel-inner{
-        .imagenEscuela{
-            height:100vh ;
+           
+            .imagenPrincipal{
+                width:100%;
+                height: 70vh;
+            }
         }
-    }
+    
+        
+           
+        .textoPrincipal{
+            width: 100%;
+            height: 50vh;
     .textoIndex {
-        padding-top: 70px;
+        
         font-family: "cooper-hewitt";
         font-style: italic;
         font-size: larger;
     }
-
+        }
     .publicidad {
         grid-area: publicidad;
         display: flex;
