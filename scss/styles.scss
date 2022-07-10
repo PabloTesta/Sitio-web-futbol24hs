@@ -238,7 +238,7 @@ iframe {
 
     .carousel-inner {
         .imagenEscuela {
-            height: 100vh;
+            height: 80vh;
         }
     }
 
@@ -304,6 +304,12 @@ td {
         "infoServicios";
 }
 
+.fondoCanchas{
+    height: 215%;
+    padding:3px;
+    margin:10px;
+    border: 2px solid lightgrey;
+}
 
 
 .infoPersonal {
@@ -330,10 +336,15 @@ td {
     .cuadroDialogo {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
+        text-align:center ;
+        
+            }
 }
-
+.consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .boton {
     width: 20%;
 }
@@ -349,7 +360,13 @@ td {
             " infoServicios"
             " boton";
     }
-
+.fondoCanchas{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 50%;
+    height:320%;
+}
     .infoPersonal {
         font-family: "cooper-hewitt";
         font-style: italic;
