@@ -27,7 +27,7 @@ li {
 
 h1 {
   font-family: "BPdiet";
-  color: black;
+  text-align: center;
   overflow-wrap: break-word; }
 
 iframe {
@@ -195,7 +195,7 @@ td {
   grid-template-columns: 100%;
   grid-template-areas: "infoPersonal" "infoServicios"; }
 
-.fondoCanchas {
+.bordeFormulario {
   height: 215%;
   padding: 3px;
   margin: 10px;
@@ -209,7 +209,7 @@ td {
   width: 100%;
   font-family: "cooper-hewitt";
   font-style: italic;
-  color: aliceblue; }
+  color: #2faac0; }
 
 .infoServicios {
   grid-area: infoServicios;
@@ -217,7 +217,7 @@ td {
   flex-direction: column;
   width: 100%;
   font-family: "cooper-hewitt";
-  color: aliceblue;
+  color: #2faac0;
   font-style: italic; }
   .infoServicios .cuadroDialogo {
     display: flex;
@@ -239,7 +239,7 @@ td {
     grid-template-rows: 30% 30% 30%;
     grid-template-columns: 100%;
     grid-template-areas: "infoPersonal" " infoServicios" " boton"; }
-  .fondoCanchas {
+  .bordeFormulario {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -248,12 +248,12 @@ td {
   .infoPersonal {
     font-family: "cooper-hewitt";
     font-style: italic;
-    color: aliceblue; }
+    color: #2faac0; }
   .infoServicios {
     display: flex;
     flex-direction: column;
     font-size: "BPdiet";
-    color: aliceblue;
+    color: #2faac0;
     font-weight: 800; }
     .infoServicios legend {
       text-align: center; }

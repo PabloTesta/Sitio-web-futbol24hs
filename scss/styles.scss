@@ -39,8 +39,8 @@ li {
 
 h1 {
     font-family: "BPdiet";
-    color: black;
-    overflow-wrap: break-word;
+    text-align: center;
+    overflow-wrap:break-word;
 
 }
 
@@ -304,7 +304,7 @@ td {
         "infoServicios";
 }
 
-.fondoCanchas{
+.bordeFormulario{
     height: 215%;
     padding:3px;
     margin:10px;
@@ -320,7 +320,7 @@ td {
     width: 100%;
     font-family: "cooper-hewitt";
     font-style: italic;
-    color: aliceblue;
+    color: map-get($color-servicios, tituloS);
 }
 
 .infoServicios {
@@ -330,7 +330,7 @@ td {
 
     width: 100%;
     font-family: "cooper-hewitt";
-    color: aliceblue;
+    color: map-get($color-servicios, tituloS);
     font-style: italic;
 
     .cuadroDialogo {
@@ -360,24 +360,25 @@ td {
             " infoServicios"
             " boton";
     }
-.fondoCanchas{
+.bordeFormulario{
     display: flex;
     flex-direction: column;
     justify-self: center;
     width: 50%;
     height:320%;
+    
 }
     .infoPersonal {
         font-family: "cooper-hewitt";
         font-style: italic;
-        color: aliceblue;
+        color: map-get($color-servicios, tituloS);
     }
 
     .infoServicios {
         display: flex;
         flex-direction: column;
         font-size: "BPdiet";
-        color: aliceblue;
+        color: map-get($color-servicios, tituloS);
         font-weight: 800;
 
         legend {
